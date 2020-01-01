@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import { renderToString } from 'react-dom/server';
 import { ServerStyleSheet } from 'styled-components';
 // import AppProvider from 'store/provider';
@@ -15,8 +15,8 @@ export const replaceRenderer = ({
   setHeadComponents,
 }) => {
   // React Context in SSR/build
-  // const ConnectedBody = () => <AppProvider>{bodyComponent}</AppProvider>;
-  const ConnectedBody = bodyComponent;
+  const ConnectedBody = () => <Fragment>{bodyComponent}</Fragment>;
+  // const ConnectedBody = bodyComponent;
   replaceBodyHTMLString(renderToString(<ConnectedBody />));
 
   // Add styled-components in SSR/build

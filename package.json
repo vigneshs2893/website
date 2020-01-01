@@ -46,6 +46,7 @@
     "eslint-plugin-react": "^7.17.0",
     "favicons": "^5.5.0",
     "gatsby-plugin-eslint": "^2.0.8",
+    "gh-pages": "^2.1.1",
     "mkdirp": "^0.5.1",
     "node-gyp": "^5.0.7",
     "prettier": "^1.19.1",
@@ -56,6 +57,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "ssr": "npm run build && npm run serve",
     "build:dir": "mkdirp ./public/icons/",
     "build:favicons": "node scripts/favicons",
