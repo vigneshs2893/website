@@ -1,0 +1,1 @@
+The need for quality professional assistance towards architecting and deploying large infrastructures on Amazon Web Services and Google Cloud platforms are in great demand. Pentafox holds an experienced platform team with diverse services skillset on AWS, GCP and a wide range of open source tools stack.

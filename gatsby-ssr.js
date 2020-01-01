@@ -4,4 +4,25 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-// You can delete this file if you're not using it
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+import { ServerStyleSheet } from 'styled-components';
+// import AppProvider from 'store/provider';
+
+export const replaceRenderer = ({
+  bodyComponent,
+  replaceBodyHTMLString,
+  setHeadComponents,
+}) => {
+  // React Context in SSR/build
+  // const ConnectedBody = () => <AppProvider>{bodyComponent}</AppProvider>;
+  const ConnectedBody = bodyComponent;
+  replaceBodyHTMLString(renderToString(<ConnectedBody />));
+
+  // Add styled-components in SSR/build
+  const sheet = new ServerStyleSheet();
+  const bodyHTML = renderToString(sheet.collectStyles(<ConnectedBody />));
+  const styleElement = sheet.getStyleElement();
+  setHeadComponents(styleElement);
+};
+

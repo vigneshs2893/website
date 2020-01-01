@@ -1,21 +1,67 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout/layout"
+import HeroSection from "../components/heroSection/HeroSection"
+import ContentSection from "../components/contentSection/contentSection"
+// import ClientLogo from "../components/clientsLogo/clientsLogo"
+import { HomeWrapper } from "../components/home/home.css"
+import { useStaticQuery, graphql } from "gatsby"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query ServicesQuery {
+      servicesJson {
+        services {
+          title
+          content {
+            childMarkdownRemark {
+              html
+              rawMarkdownBody
+            }
+          }
+          image1 {
+            childImageSharp {
+              fluid(maxHeight: 300, quality: 90) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              }
+            }
+          }
+          image2 {
+            childImageSharp {
+              fluid(maxHeight: 300, quality: 90) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  
+  return (
+    <Layout>
+      {/* home page starts */}
+      <HomeWrapper>
+        <HeroSection />
+        {
+          data.servicesJson.services.map((item, i) => {
+            return (
+              <ContentSection 
+                key={i}
+                rightSide={i%2}
+                image1={item.image1.childImageSharp.fluid}
+                image2={item.image2.childImageSharp.fluid}
+                heading={item.title}
+                description={item.content.childMarkdownRemark.rawMarkdownBody}
+              />
+            )
+          })
+        }
+        {/* <ClientLogo /> */}
+      </HomeWrapper>
+      {/* home page ends */}
+    </Layout>
+  )
+}
 
 export default IndexPage

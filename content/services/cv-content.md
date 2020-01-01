@@ -1,0 +1,1 @@
+Insights of great value is hidden in millions of business transactions accumulating into terabytes of information. Empower your business with Machine Learning and Computer vision solutions to unravel the knowledge beneath the data.

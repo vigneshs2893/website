@@ -1,0 +1,1 @@
+Pentafox Technologies is a Data age IT product solutions startup focused on transforming all kinds of business to the next level with the the power of Cloud embedded with intelligence from wide range of AI/ML capabilities. Let’s discuss over a cup of coffee if you have an interesting usecase to solve!

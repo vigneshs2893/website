@@ -1,0 +1,27 @@
+{
+  "title": "Pentafox",
+  "landingImage": "../../src/images/landing.jpg",
+  "landingTitle": "Empower your business with IT",
+  "landingDescription": "landing-description.md",
+  "content": "intro.md",
+  "bannerSection": [{
+    "title": "Platform Engineering",
+    "content": "Grow your business with the power of cloud",
+    "image": "../../src/images/platform-banner.jpg"
+  },
+  {
+    "title": "Computer Vision",
+    "content": "Enable your applications with Intelligence",
+    "image": "../../src/images/cv-banner.jpg"
+  },
+  {
+    "title": "Digital Strategy",
+    "content": "Let us help you increase your digital footprint",
+    "image": "../../src/images/digital-banner.jpg"
+  }],
+  "footer": {
+    "email": "hello@pentafox.in",
+    "mobile": "(+91) 90432 69523",
+    "social": []
+  }
+}

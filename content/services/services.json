@@ -1,0 +1,20 @@
+{
+  "services": [{
+    "title": "Platform Engineering",
+    "content": "platform-content.md",
+    "image1": "../../src/images/platform-1.png",
+    "image2": "../../src/images/platform-2.png"
+  },
+  {
+    "title": "Computer Vision",
+    "content": "cv-content.md",
+    "image1": "../../src/images/cv-2.jpg",
+    "image2": "../../src/images/cv-1.jpg"
+  },
+  {
+    "title": "Digital Strategy",
+    "content": "digital-content.md",
+    "image1": "../../src/images/digital-1.jpg",
+    "image2": "../../src/images/digital-3.png"
+  }]
+}
