@@ -33,6 +33,17 @@ const IndexPage = () => {
               }
             }
           }
+          category {
+            title
+            content
+            image {
+              childImageSharp {
+                fluid(maxHeight: 150, quality: 90) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -49,10 +60,12 @@ const IndexPage = () => {
               <ContentSection 
                 key={i}
                 rightSide={i%2}
+                listWithIcons
                 image1={item.image1.childImageSharp.fluid}
                 image2={item.image2.childImageSharp.fluid}
                 heading={item.title}
                 description={item.content.childMarkdownRemark.rawMarkdownBody}
+                category={item.category}
               />
             )
           })

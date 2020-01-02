@@ -3,18 +3,84 @@
     "title": "Platform Engineering",
     "content": "platform-content.md",
     "image1": "../../src/images/platform-1.png",
-    "image2": "../../src/images/platform-2.png"
+    "image2": "../../src/images/platform-2.png",
+    "category": [
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      },
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      },
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      },
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      }
+    ]
   },
   {
     "title": "Computer Vision",
     "content": "cv-content.md",
     "image1": "../../src/images/cv-2.jpg",
-    "image2": "../../src/images/cv-1.jpg"
+    "image2": "../../src/images/cv-1.jpg",
+    "category": [
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      },
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      },
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      },
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      }
+    ]
   },
   {
     "title": "Digital Strategy",
     "content": "digital-content.md",
     "image1": "../../src/images/digital-1.jpg",
-    "image2": "../../src/images/digital-3.png"
+    "image2": "../../src/images/digital-3.png",
+    "category": [
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      },
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      },
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      },
+      {
+        "title": "Test 1",
+        "content": "content 1",
+        "image": "../../src/images/platform-1.png"
+      }
+    ]
   }]
 }

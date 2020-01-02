@@ -10,7 +10,8 @@ const ContentSection = ({
   listWithIcons,
   serviceStock,
   image1,
-  image2
+  image2,
+  category
 }) => {
   return (
     <ContentSectionWrapper rightSideStyle={rightSide}>
@@ -39,42 +40,21 @@ const ContentSection = ({
             
             {listWithIcons ?
               <ul className="clearfix list-unstyled list-card">
-                <li>
-                  <figure
-                    style={{
-                      backgroundImage: `url(https://pyt-images.imgix.net/images/city/2400xh/ubud.jpg)`
-                    }}
-                  />
-                  <span>ML Solutions</span>
-                  Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                  <figure
-                    style={{
-                      backgroundImage: `url(https://pyt-images.imgix.net/images/city/2400xh/ubud.jpg)`
-                    }}
-                  />
-                  <span>ML Solutions</span>
-                  Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                  <figure
-                    style={{
-                      backgroundImage: `url(https://pyt-images.imgix.net/images/city/2400xh/ubud.jpg)`
-                    }}
-                  />
-                  <span>ML Solutions</span>
-                  Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                  <figure
-                    style={{
-                      backgroundImage: `url(https://pyt-images.imgix.net/images/city/2400xh/ubud.jpg)`
-                    }}
-                  />
-                  <span>ML Solutions</span>
-                  Lorem ipsum dolor sit amet
-                </li>
+                {
+                  category.map((item, i) => {
+                    return (
+                      <li>
+                        <BackgroundImage
+                          Tag="figure"
+                          fluid={item.image}
+                          style={{ position: "absolute" }}
+                        />
+                        <span>{item.title}</span>
+                        {item.content}
+                      </li>
+                    )
+                  })
+                }
               </ul>
             : null}
           </div>
