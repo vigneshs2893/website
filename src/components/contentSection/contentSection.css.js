@@ -65,11 +65,15 @@ export const ContentSectionWrapper = styled.div`
         }
 
         &.list-card {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          
           li {
             position: relative;
             width: 100%;
             float: left;
-            padding-left: 64px;
+            padding: 0 16px 0 64px;
             min-height: 46px;
             display: flex;
             flex-wrap: wrap;
@@ -83,16 +87,21 @@ export const ContentSectionWrapper = styled.div`
               width: 100%;
               display: block;
               font-weight: 700;
+              margin-bottom: 6px;
             }
   
             figure {
-              background-color: #E8E8E8;
+              background-color: #fcfcfc;
               width: 46px;
               height: 46px;
               border-radius: 100%;
               position: absolute;
               top: 0;
               left: 0;
+
+              &:before {
+                opacity: 0.75;
+              }
             }
           }
         }
@@ -154,8 +163,12 @@ export const ContentSectionWrapper = styled.div`
             background-size: cover;
             background-position: center;
             background-color: #E5E5E5;
-            border-radius: 3px;
+            border-radius: 4px;
             z-index: 2;
+
+            &:before {
+              border-radius: 4px;
+            }
           }
 
           &.left-img {

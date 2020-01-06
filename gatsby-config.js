@@ -48,13 +48,20 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `images`,
-          path: `${__dirname}/src/images`,
-        },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/icons`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

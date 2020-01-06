@@ -21,15 +21,47 @@ const IndexPage = () => {
           }
           image1 {
             childImageSharp {
-              fluid(maxHeight: 300, quality: 90) {
+              fluid(
+                maxHeight: 300,
+                quality: 90,
+                traceSVG: {
+                  color: "#292733"
+                  turnPolicy: TURNPOLICY_MAJORITY
+                }
+              ) {
                 ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }
           image2 {
             childImageSharp {
-              fluid(maxHeight: 300, quality: 90) {
+              fluid(
+                maxHeight: 300,
+                quality: 90,
+                traceSVG: {
+                  color: "#292733"
+                  turnPolicy: TURNPOLICY_MAJORITY
+                }
+              ) {
                 ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              }
+            }
+          }
+          category {
+            title
+            content
+            image {
+              childImageSharp {
+                fluid(
+                  maxHeight: 120,
+                  quality: 90,
+                  traceSVG: {
+                    color: "#d04b4b"
+                    turnPolicy: TURNPOLICY_MAJORITY
+                  }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
               }
             }
           }
@@ -43,20 +75,20 @@ const IndexPage = () => {
       {/* home page starts */}
       <HomeWrapper>
         <HeroSection />
-        {
-          data.servicesJson.services.map((item, i) => {
+        {data.servicesJson.services.map((item, i) => {
             return (
               <ContentSection 
                 key={i}
                 rightSide={i%2}
+                listWithIcons
                 image1={item.image1.childImageSharp.fluid}
                 image2={item.image2.childImageSharp.fluid}
                 heading={item.title}
                 description={item.content.childMarkdownRemark.rawMarkdownBody}
+                category={item.category}
               />
             )
-          })
-        }
+          })}
         {/* <ClientLogo /> */}
       </HomeWrapper>
       {/* home page ends */}

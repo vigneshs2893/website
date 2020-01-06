@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
           <div className="col-12 col-sm-5 col-md-4">
             <form>
-              <div className="form-group has-error">
+              <div className="form-group">
                 <input name="" type="text" placeholder="Name" />
               </div>
               <div className="form-group">
@@ -63,7 +63,7 @@ const Footer = () => {
               <div className="form-group">
                 <input name="" type="text" placeholder="Budget" />
               </div>
-              <div className="form-group custom-file has-error">
+              <div className="form-group custom-file">
                 <input name="" type="file" className="custom-file-input" placeholder="PDF / Doc" />
                 <i className="placeholder-txt">PDF / Doc</i>
                 <span class="upload-btn">Upload</span>

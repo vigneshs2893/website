@@ -10,7 +10,8 @@ const ContentSection = ({
   listWithIcons,
   serviceStock,
   image1,
-  image2
+  image2,
+  category
 }) => {
   return (
     <ContentSectionWrapper rightSideStyle={rightSide}>
@@ -34,63 +35,40 @@ const ContentSection = ({
                   <li><img src="https://i.imgur.com/VYzQKup.png" alt="" /></li>
                 </ul>
               </Fragment>
-              : null
-            }
+              : null}
             
             {listWithIcons ?
               <ul className="clearfix list-unstyled list-card">
-                <li>
-                  <figure
-                    style={{
-                      backgroundImage: `url(https://pyt-images.imgix.net/images/city/2400xh/ubud.jpg)`
-                    }}
-                  />
-                  <span>ML Solutions</span>
-                  Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                  <figure
-                    style={{
-                      backgroundImage: `url(https://pyt-images.imgix.net/images/city/2400xh/ubud.jpg)`
-                    }}
-                  />
-                  <span>ML Solutions</span>
-                  Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                  <figure
-                    style={{
-                      backgroundImage: `url(https://pyt-images.imgix.net/images/city/2400xh/ubud.jpg)`
-                    }}
-                  />
-                  <span>ML Solutions</span>
-                  Lorem ipsum dolor sit amet
-                </li>
-                <li>
-                  <figure
-                    style={{
-                      backgroundImage: `url(https://pyt-images.imgix.net/images/city/2400xh/ubud.jpg)`
-                    }}
-                  />
-                  <span>ML Solutions</span>
-                  Lorem ipsum dolor sit amet
-                </li>
+                {category.map((item, i) => {
+                    return (
+                      <li key={i}>
+                        <BackgroundImage
+                          Tag="figure"
+                          fluid={item.image.childImageSharp.fluid}
+                          style={{ position: 'absolute' }}
+                        />
+                        <span>{item.title}</span>
+                        {item.content}
+                      </li>
+                    );
+                  })}
               </ul>
             : null}
           </div>
+
           <div className="right-col">
-            <div className={`image-card`}>
+            <div className="image-card">
               <BackgroundImage
                 Tag="figure"
                 fluid={image1}
                 className="left-img"
-                style={{ position: "absolute" }}
+                style={{ position: 'absolute' }}
               />
               <BackgroundImage
                 Tag="figure"
                 fluid={image2}
                 className="right-img"
-                style={{ position: "absolute" }}
+                style={{ position: 'absolute' }}
               />
             </div>
           </div>
@@ -105,7 +83,7 @@ ContentSection.prototypes = {
   description: PropTypes.string,
   rightSide: PropTypes.bool,
   listWithIcons: PropTypes.bool,
-  serviceStock: PropTypes.bool
+  serviceStock: PropTypes.bool,
 };
 
 export default ContentSection;

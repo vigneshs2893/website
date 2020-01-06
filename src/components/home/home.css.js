@@ -8,7 +8,7 @@ export const HomeWrapper = styled.div`
     line-height: 120%;
     color: #292733;
     margin: 0 0 8px;
-    font-weight: 700;
+    font-weight: 500;
 
     ${sm} {
       font-size: 28px;

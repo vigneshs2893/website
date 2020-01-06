@@ -3,18 +3,84 @@
     "title": "Platform Engineering",
     "content": "platform-content.md",
     "image1": "../../src/images/platform-1.png",
-    "image2": "../../src/images/platform-2.png"
+    "image2": "../../src/images/platform-2.png",
+    "category": [
+      {
+        "title": "CloudOps",
+        "content": "Design and Development of cloud solutions using industrial best practices",
+        "image": "../../src/images/icons/platform_engineering/cloud_ops.png"
+      },
+      {
+        "title": "DevOps",
+        "content": "Application and Tools to Solutions to automate development process silos",
+        "image": "../../src/images/icons/platform_engineering/devops.png"
+      },
+      {
+        "title": "Cloud Migration",
+        "content": "Solutions focussed on clean migration from on-premise to Cloud Services",
+        "image": "../../src/images/icons/platform_engineering/cloud_migration.png"
+      },
+      {
+        "title": "Solution Architecting",
+        "content": "Architect solutions for large scale digital deployments and application services",
+        "image": "../../src/images/icons/platform_engineering/solution_architecting.png"
+      }
+    ]
   },
   {
-    "title": "Computer Vision",
+    "title": "Machine Learning",
     "content": "cv-content.md",
     "image1": "../../src/images/cv-2.jpg",
-    "image2": "../../src/images/cv-1.jpg"
+    "image2": "../../src/images/cv-1.jpg",
+    "category": [
+      {
+        "title": "Computer Vision",
+        "content": "Solutions to infer knowledge out of Videos and Images using Video and Image processing techniques.",
+        "image": "../../src/images/icons/machine_learning/computer_vision.png"
+      },
+      {
+        "title": "Video Analytics",
+        "content": "Video metadata extraction, deep learning solutions for extracting intelligence from videos",
+        "image": "../../src/images/icons/machine_learning/video_analytics.png"
+      },
+      {
+        "title": "Data Intelligence",
+        "content": "Extract knowledge out of data and interpret outcomes with state-of-art visualisation methodologies",
+        "image": "../../src/images/icons/machine_learning/data_intelligence.png"
+      },
+      {
+        "title": "Natural Language Processing",
+        "content": "Uncover hidden insights from natural data with deeper understanding for better customer engagement",
+        "image": "../../src/images/icons/machine_learning/nlp.png"
+      }
+    ]
   },
   {
     "title": "Digital Strategy",
     "content": "digital-content.md",
     "image1": "../../src/images/digital-1.jpg",
-    "image2": "../../src/images/digital-3.png"
+    "image2": "../../src/images/digital-3.png",
+    "category": [
+      {
+        "title": "Digital Analytics",
+        "content": "Customer behavioural analysis on digital products for better UI/UX experience",
+        "image": "../../src/images/icons/digital_strategy/digital_analysis.png"
+      },
+      {
+        "title": "eCommerce Solutions",
+        "content": "Scalable and customised web portals for better ecommerce experience",
+        "image": "../../src/images/icons/digital_strategy/ecommerce.png"
+      },
+      {
+        "title": "Mobile Application",
+        "content": "Design, develop and manage tailor made mobile apps for various industry verticals",
+        "image": "../../src/images/icons/digital_strategy/mobile_app.png"
+      },
+      {
+        "title": "Creative Designing",
+        "content": "Get Inspiring and out of the box uniques creatives for showcasing your brand better",
+        "image": "../../src/images/icons/digital_strategy/creative_design.png"
+      }
+    ]
   }]
 }

@@ -36,7 +36,14 @@ const HeroSection = () => {
         }
         landingImage {
           childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
+            fluid(
+              maxHeight: 800,
+              quality: 90,
+              traceSVG: {
+                color: "#292733"
+                turnPolicy: TURNPOLICY_MINORITY
+              }
+            ) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -46,7 +53,14 @@ const HeroSection = () => {
           content
           image {
             childImageSharp {
-              fluid(maxHeight: 500, quality: 90) {
+              fluid(
+                maxHeight: 500,
+                quality: 90,
+                traceSVG: {
+                  color: "#292733"
+                  turnPolicy: TURNPOLICY_MAJORITY
+                }
+              ) {
                 ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
