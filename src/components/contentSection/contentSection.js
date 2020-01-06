@@ -50,7 +50,7 @@ const ContentSection = ({
                         <span>{item.title}</span>
                         {item.content}
                       </li>
-                    );
+                    )
                   })}
               </ul>
             : null}
