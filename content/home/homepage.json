@@ -10,14 +10,14 @@
     "image": "../../src/images/platform-banner.jpg"
   },
   {
+    "title": "Machine Learning",
+    "content": "Enable your applications with Intelligence",
+    "image": "../../src/images/cv-banner.jpg"
+  },
+  {
     "title": "Digital Strategy",
     "content": "Let us help you increase your digital footprint",
     "image": "../../src/images/digital-banner.jpg"
-  },
-  {
-    "title": "Computer Vision",
-    "content": "Enable your applications with Intelligence",
-    "image": "../../src/images/cv-banner.jpg"
   }],
   "footer": {
     "email": "hello@pentafox.in",

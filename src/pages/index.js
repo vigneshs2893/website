@@ -79,6 +79,7 @@ const IndexPage = () => {
             return (
               <ContentSection 
                 key={i}
+                id={i}
                 rightSide={i%2}
                 listWithIcons
                 image1={item.image1.childImageSharp.fluid}

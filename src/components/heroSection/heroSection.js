@@ -3,8 +3,9 @@ import IsMobile from 'helpers/IsMobile';
 import { useStaticQuery, graphql } from "gatsby"
 import { HeroSectionWrapper } from './heroSection.css';
 import BackgroundImage from 'gatsby-background-image'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
-const FigureWrapper = ({ children, ...props}) => {
+const FigureWrapper = ({ children, id, ...props}) => {
   const isMobileDevice = IsMobile();
   if(isMobileDevice) {
     return <figure>{children}</figure>
@@ -14,6 +15,7 @@ const FigureWrapper = ({ children, ...props}) => {
     <BackgroundImage
       Tag="figure"
       fluid={props.image}
+      onClick={() => scrollTo(`#content-section-${id}`)}
     >
       {children}
     </BackgroundImage>
@@ -89,7 +91,7 @@ const HeroSection = () => {
                 <p>{data.homeJson.landingDescription.childMarkdownRemark.rawMarkdownBody}</p>
               </Fragment>
             }
-            {/* <span className="know-more">Know more</span> */}
+            <span className="know-more" onClick={() => scrollTo(`#content-section-0`)}>Know more</span>
           </figcaption>
         </BackgroundImage>
       </div>
@@ -97,7 +99,7 @@ const HeroSection = () => {
         {
           data.homeJson.bannerSection.map((item, i) => {
             return (
-              <FigureWrapper key={i} image={item.image.childImageSharp.fluid}>
+              <FigureWrapper key={i} id={i} image={item.image.childImageSharp.fluid}>
                 <figcaption>
                   <h2>{item.title}</h2>
                   <p>{item.content}</p>

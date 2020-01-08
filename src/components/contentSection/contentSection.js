@@ -4,6 +4,7 @@ import BackgroundImage from 'gatsby-background-image'
 import { ContentSectionWrapper } from './contentSection.css';
 
 const ContentSection = ({
+  id,
   heading,
   description,
   rightSide,
@@ -14,7 +15,7 @@ const ContentSection = ({
   category
 }) => {
   return (
-    <ContentSectionWrapper rightSideStyle={rightSide}>
+    <ContentSectionWrapper id={`content-section-${id}`} rightSideStyle={rightSide}>
       <div className="container lg-container">
         <div className="middle-content">
           <div className="left-col">

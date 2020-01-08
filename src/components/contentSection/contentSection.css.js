@@ -2,9 +2,11 @@ import styled, { css } from 'styled-components';
 import { sm, md } from 'helpers/device';
 
 export const ContentSectionWrapper = styled.div`
-  margin-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   ${sm}{
-    margin-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .middle-content {

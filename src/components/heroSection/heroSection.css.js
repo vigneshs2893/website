@@ -4,12 +4,12 @@ import { xs, sm, md, lg } from 'helpers/device';
 export const HeroSectionWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 64px;
+  // margin-bottom: 64px;
 
   ${sm}{
     height: 100vh;
     min-height: 702px;
-    margin-bottom: 112px;
+    // margin-bottom: 112px;
   }
 
   /* common css starts */
