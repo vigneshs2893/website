@@ -12,6 +12,12 @@ const Footer = () => {
         footer {
           email
           mobile
+          address {
+            mobile
+            desktop
+          }
+          facebook
+          linkedin
         }
       }
     }
@@ -23,37 +29,64 @@ const Footer = () => {
         <div className={`row ${!isMobileDevice ? 'vertical-bottom' : ''}`}>
           <div className="col-12 col-sm-7 col-md-8">
             <p className="heading-txt mb-24">
-              <span classNama="bold">Don’t be a stranger</span>
+              <span className="bold">Don’t be a stranger</span>
               just say hello
             </p>
             <p className="mb-32">
               {isMobileDevice ? 
-                'Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunity to be part of your visions.'
+                'Feel free to get in touch with us. We are always open to discussing new projects, creative ideas or opportunity to be part of your visions.'
                 :
                 <Fragment>
-                  Feel free to get in touch with me.<br />
-                  I am always open to discussing new projects, creative<br />
+                  Feel free to get in touch with us.<br />
+                  We are always open to discussing new projects, creative<br />
                   ideas or opportunity to be part of your visions.
                 </Fragment>
               }
             </p>
-            <p className="mb-24">
-              <span>Need help?</span>
-              <a href={`mailto:${data.homeJson.footer.email}`}>{data.homeJson.footer.email}</a>
-            </p>
-            <p className="mb-40">
-              <span>Feel like talking</span>
-            <a href={`tel:${data.homeJson.footer.mobile.replace(/[\s\(\)-]/g, '')}`}>{data.homeJson.footer.mobile}</a>
-            </p>
-            <ul className="list-unstyled social-icons">
-              <li><a href="/" ><i className="pentafox-facebook" /></a></li>
-              <li><a href="/" ><i className="pentafox-twitter" /></a></li>
-              <li><a href="/" ><i className="pentafox-instagram" /></a></li>
-              <li><a href="/" ><i className="pentafox-linkedin" /></a></li>
-            </ul>
+            
+            {isMobileDevice ? null : (
+              <ul className="list-unstyled social-icons mb-40">
+                <li><a href={data.homeJson.footer.facebook} target="_blank"><i className="pentafox-facebook" /></a></li>
+                {/* <li><a href="/" ><i className="pentafox-twitter" /></a></li>
+                <li><a href="/" ><i className="pentafox-instagram" /></a></li> */}
+                <li><a href={data.homeJson.footer.linkedin} target="_blank"><i className="pentafox-linkedin" /></a></li>
+              </ul>
+            )}
           </div>
           <div className="col-12 col-sm-5 col-md-4">
-            <form>
+            <p className="mb-24">
+              <span>Address</span>
+              {isMobileDevice ? 
+                data.homeJson.footer.address.mobile.map((item, i) => <Fragment key={i}>{item}<br/></Fragment>)
+                :
+                <Fragment>
+                  {data.homeJson.footer.address.desktop.map((item, i) => <Fragment key={i}>{item}<br/></Fragment>)}
+                </Fragment>
+              }
+            </p>
+            <div className="row">
+              <div className="col-6">
+                <p className="mb-40">
+                  <span>Feel like talking</span>
+                  <a href={`tel:${data.homeJson.footer.mobile.replace(/[\s\(\)-]/g, '')}`}>{data.homeJson.footer.mobile}</a>
+                </p>
+              </div>
+              <div className="col-6">
+                <p className="mb-40">
+                  <span>Need help?</span>
+                  <a href={`mailto:${data.homeJson.footer.email}`}>{data.homeJson.footer.email}</a>
+                </p>
+              </div>
+            </div>
+            {isMobileDevice ? (
+              <ul className="list-unstyled social-icons mb-40">
+                <li><a href={data.homeJson.footer.facebook} target="_blank"><i className="pentafox-facebook" /></a></li>
+                {/* <li><a href="/" ><i className="pentafox-twitter" /></a></li>
+                <li><a href="/" ><i className="pentafox-instagram" /></a></li> */}
+                <li><a href={data.homeJson.footer.linkedin} target="_blank"><i className="pentafox-linkedin" /></a></li>
+              </ul>
+            ): null}
+            {/* <form>
               <div className="form-group">
                 <input name="" type="text" placeholder="Name" />
               </div>
@@ -69,18 +102,18 @@ const Footer = () => {
                 <span class="upload-btn">Upload</span>
               </div>
             </form>
-            <button className="btn send-btn">Send Request</button>
+            <button className="btn send-btn">Send Request</button> */}
           </div>
         </div>
 
         <div className="btm-link">
           <div className="left-col">
-            <a href="/" >Privacy Policy</a>{' '}&#124;{' '}
-            <a href="/" >FAQ</a>{' '}&#124;{' '}
-            <a href="/" >Terms of use</a>
+            {/* <a href="/" >Privacy Policy</a>{' '}&#124;{' '} */}
+            {/* <a href="/" >FAQ</a>{' '}&#124;{' '}
+            <a href="/" >Terms of use</a> */}
           </div>
           <div className="right-col">
-            Designed by <a href="https://prodjar.com/" rel="no-ollow" className="prodjar-link">prodjar</a>
+            Designed by <a href="https://prodjar.com/" target="_blank" rel="no-allow" className="prodjar-link">prodjar</a>
           </div>
         </div>
       </div>

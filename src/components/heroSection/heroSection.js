@@ -89,7 +89,7 @@ const HeroSection = () => {
                 <p>{data.homeJson.landingDescription.childMarkdownRemark.rawMarkdownBody}</p>
               </Fragment>
             }
-            <span className="know-more">Know more</span>
+            {/* <span className="know-more">Know more</span> */}
           </figcaption>
         </BackgroundImage>
       </div>

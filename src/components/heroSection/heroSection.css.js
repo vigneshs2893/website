@@ -28,7 +28,7 @@ export const HeroSectionWrapper = styled.div`
       
       ${md}{
         overflow: hidden;
-        transition: all .6s ease-in-out;
+        transition: all .75s ease-in-out;
         backface-visibility: hidden;
         transform-style: preserve-3d;
 

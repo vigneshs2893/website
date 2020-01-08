@@ -46,12 +46,10 @@ export const FooterWrapper = styled.footer`
 
     a {
       color: ${theme.white};
-      font-weight: 600;
     }
   }
 
   ul {
-    margin-bottom: 56px;
 
     &.social-icons {
       li {
