@@ -7,6 +7,7 @@ export const FooterWrapper = styled.footer`
   display: flex;
   flex-wrap: wrap;
   padding-top: 32px;
+  margin-top: 32px;
 
   ${sm}{
     padding: 56px 0 32px;
