@@ -203,8 +203,13 @@ export const FooterWrapper = styled.footer`
       color: #757575;
 
       &.prodjar-link {
-        color: ${theme.white};
-        font-weight: 700;
+        display: inline-block;
+        min-width: 64px;
+        margin-left: 6px;
+        &:before {
+          background-size: contain;
+          background-position: center left;
+        }
       }
     }
 

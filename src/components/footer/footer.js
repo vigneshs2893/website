@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 import IsMobile from '../../helpers/IsMobile';
 import { FooterWrapper } from './footer.css';
+import BackgroundImage from 'gatsby-background-image';
 
 
 const Footer = () => {
@@ -18,6 +19,15 @@ const Footer = () => {
           }
           facebook
           linkedin
+          prodjar {
+            childImageSharp {
+              fluid(
+                quality: 90,
+              ) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
         }
       }
     }
@@ -113,7 +123,16 @@ const Footer = () => {
             <a href="/" >Terms of use</a> */}
           </div>
           <div className="right-col">
-            Designed by <a href="https://prodjar.com/" target="_blank" rel="no-allow" className="prodjar-link">prodjar</a>
+            Designed by
+            <BackgroundImage
+              Tag="a"
+              fluid={data.homeJson.footer.prodjar.childImageSharp.fluid}
+              href="https://prodjar.com/"
+              target="_blank"
+              rel="no-allow"
+              className="prodjar-link"
+            >&nbsp;
+            </BackgroundImage>
           </div>
         </div>
       </div>

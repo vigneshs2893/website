@@ -34,6 +34,7 @@
       ]
     },
     "facebook": "https://www.facebook.com/pentafox.in",
-    "linkedin": "https://linkedin.com/company/pentafox-tech"
+    "linkedin": "https://linkedin.com/company/pentafox-tech",
+    "prodjar": "../../src/images/prodjar.png"
   }
 }

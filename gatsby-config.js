@@ -69,10 +69,10 @@ module.exports = {
         name: `Pentafox`,
         short_name: `pentafox`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#dc2908`,
+        theme_color: `#dc2908`,
         display: `minimal-ui`,
-        icon: `src/images/site-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo-icon.svg`, // This path is relative to the root of the site.
       },
     },
     {
