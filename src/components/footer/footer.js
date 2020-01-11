@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import IsMobile from '../../helpers/IsMobile';
 import { FooterWrapper } from './footer.css';
 import BackgroundImage from 'gatsby-background-image';
-
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 
 const Footer = () => {
   const isMobileDevice = IsMobile();
@@ -131,6 +131,13 @@ const Footer = () => {
               target="_blank"
               rel="no-allow"
               className="prodjar-link"
+              onClick={() => {
+                trackCustomEvent({
+                  category: "Projar",
+                  action: "Click",
+                  label: "Prodjar Credits",
+                });
+              }}
             >&nbsp;
             </BackgroundImage>
           </div>
