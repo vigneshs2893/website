@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout/layout"
-import HeroSection from "../components/heroSection/HeroSection"
+import HeroSection from "../components/heroSection/heroSection"
 import ContentSection from "../components/contentSection/contentSection"
 // import ClientLogo from "../components/clientsLogo/clientsLogo"
 import { HomeWrapper } from "../components/home/home.css"
