@@ -164,7 +164,6 @@ const Head = ({
     </script>
   </Helmet>
 );
-
 Head.propTypes = {
   siteTitle: PropTypes.string,
   siteTitleShort: PropTypes.string,
