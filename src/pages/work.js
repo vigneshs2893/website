@@ -11,16 +11,17 @@ function Home(props) {
         <Text>DESIGN PARTNERSHIP WITH</Text>
         <I2 src="/prodjar.png"></I2>
         <Text1>
-          Curious to know about who we are?Here it is
+          Curious to know about who we are? Here it is.
          </Text1>
       <Stack1>
         <Stack2>
           <TextStack>
             <Text2>
-              PRODJAR is going to be your wholesome product solution place.A
-              one stop marketplace {"\n"}here you can make your dream product with{"\n"}{""}
-              the support of our expert jar.
-            </Text2>
+              PRODJAR is going to be your wholesome product solution place.A {"\n"}
+              one stop marketplace {"\n"}here you can make your dream product with</Text2>
+            <Text15>
+              the support of our expert jar
+            </Text15>
            
           </TextStack>
 
@@ -954,12 +955,30 @@ const I6 = styled.img`
 
 const Text2 = styled.span`
   font-family: Nunito;
-
+  position :relative;
   top: 70px;
   left: 260px;
-  position : relative;
   line-height : 140%;
-  text-align : centre;
+  font-style: normal;
+  font-weight: 400;
+  color: #121212;
+  font-size: 24px;
+
+  @media(max-width: 991px) {
+    top: 20px;
+    min-height: 72px;
+    left : -20px;
+    font-size : 15px;
+
+
+  }
+`;
+const Text15 = styled.span`
+  font-family: Nunito;
+  position : absolute;
+  top: 143px;
+  left: 460px;
+  line-height : 140%;
   font-style: normal;
   font-weight: 400;
   color: #121212;
