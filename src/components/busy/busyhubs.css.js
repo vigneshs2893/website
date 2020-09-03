@@ -10,7 +10,7 @@ export const BusyWrapper = styled.div`
   font-size: 40px;
   width: 262px;
   height: 56px;
-  top: 30px;
+  top: 40px;
   left: 20px;
   position:absolute;
   @media(max-width: 991px) {

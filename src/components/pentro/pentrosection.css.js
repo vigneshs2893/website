@@ -17,7 +17,7 @@ export const BusyWrapper1 = styled.div`
 
 
     @media(max-width: 991px) {
-      top: 720px;
+      top: 2720px;
       min-height: 500px;
       width : 400px;
       left : -20px;
