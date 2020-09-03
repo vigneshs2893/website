@@ -5,7 +5,7 @@ function Home(props) {
   return (
     <>
       <Image1Row>
-        <I1 src="4.png"></I1>
+        <I1 src="/4.png"></I1>
         <TextInput placeholder="Pentafox"></TextInput>
       </Image1Row>
         <Text>DESIGN PARTNERSHIP WITH</Text>

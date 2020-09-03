@@ -1,0 +1,64 @@
+{
+  "title": "Pentafox",
+  "landingTitle": "Busyhubs",
+  "content" : "Web page,Dashboard",
+  "call"  :{
+    "title" : "BusyHubs",
+    "subtitle" :"web page,Dashboard",
+    "content" : "The Challenge for us ",
+    "content1" : "BusyHubs connect the learners, who are  consistently looking to enhance their knowledge, with the tutors, who are excited to share their expertise skills, in collaboration with us",
+    "client" : "CLIENT",
+    "project": " PROJECT",
+    "hubs": " Busyhubs",
+    "key"  : "Learning Platform",
+    "see " : "See more Images Click Here",
+    "image1" : "../../src/images/icons/platform_engineering/solution_architecting.png",
+    "image2" :"../../src/images/icons/platform_engineering/devops.png",
+    "image3" :"../../src/images/profile/1.png"
+    
+  },
+  "pentro" :{
+    "title" : "Pentro Money",
+    "subtitle" :"Mobile",
+    "content" : "The Challenge for us ",
+    "content1" : "Tamilnadu Startup and Innovation Mission (TANSIM) e-Portal’s primary and foundation user flow starts from the TANSIM website. This set of landing pages is used as “Go To Market” for various use cases of TANSIM operations and schemes marketing.",
+    "client" : "CLIENT",
+    "project": "PROJECT",
+    "hubs": " Pentro Money",
+    "key"  : "Transform Petrol Stations",
+    "see " : "See more Images Click Here",
+    "image1" :"../../src/images/profile/1.png",
+    "image2" : "../../src/images/profile/1.png",
+    "image3" : "../../src/images/profile/1.png"
+
+  },
+  "retail" :{
+    "title" : "Retail Hub",
+    "subtitle" :"Dashboard,Mobile",
+    "content" : "The Challenge for us ",
+    "content1" : "With a pan India field footprint and a whole new thinking on delivering measurable value to our clients, we try to unearth every conceivable store related issue that affects execution and sales of our clients. ",
+    "client" : "CLIENT",
+    "project": " PROJECT",
+    "hubs": "Retail Scan",
+    "key"  : "In-store Solutions",
+    "see " : "See more Images Click Here",
+    "image1" :"../../src/images/profile/1.png",
+    "image2" :"../../src/images/profile/1.png",
+    "image3" :"../../src/images/profile/1.png"
+
+},
+"festen" :{
+  "title" : "Festen Technology",
+  "subtitle" :"Logo, Guideline",
+  "content" : "The Challenge for us ",
+  "content1" : "Young & Energetic service company providing technology consulting, talent sourcing, and human resource management solutions to various corporate clients within India, Europe and the UK. ",
+  "client" : "CLIENT",
+  "project": " PROJECT",
+  "hubs": " Festen Tech",
+  "key"  : "Human Resource Management ",
+  "see " : "See more Images Click Here",
+  "images" :
+    "../../src/images/profile/1.png"
+
+}
+}

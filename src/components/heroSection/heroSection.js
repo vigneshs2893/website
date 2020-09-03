@@ -70,7 +70,7 @@ const HeroSection = () => {
         <BackgroundImage
           Tag="figure"
           fluid={data.homeJson.landingImage.childImageSharp.fluid}
-        >
+          >
           <figcaption>
             <h2>{data.homeJson.landingTitle}</h2>
             <p>{data.homeJson.landingDescription.childMarkdownRemark.rawMarkdownBody}</p>
