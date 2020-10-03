@@ -1,12 +1,14 @@
 import React from "react"
 
 import Layout from "../components/layout/layout"
-import HeroSection from "../components/heroSection/HeroSection"
+import HeroSection from "../components/heroSection/heroSection"
 import ContentSection from "../components/contentSection/contentSection"
 // import ClientLogo from "../components/clientsLogo/clientsLogo"
 import { HomeWrapper } from "../components/home/home.css"
 import { useStaticQuery, graphql } from "gatsby"
-
+import Busyhubs from "../components/busy/busyhubs"
+import Retail from "../components/Retail/Retailhub"
+import Festen from "../components/Festen/Festen"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query ServicesQuery {
@@ -81,7 +83,7 @@ const IndexPage = () => {
                 key={i}
                 id={i}
                 rightSide={i%2}
-                listWithIcons
+                listWithIcons={[]}
                 image1={item.image1.childImageSharp.fluid}
                 image2={item.image2.childImageSharp.fluid}
                 heading={item.title}
