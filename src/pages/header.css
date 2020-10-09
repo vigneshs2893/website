@@ -1,0 +1,36 @@
+.head{
+    margin: 20px 80px 0px 80px ;
+    font-family: Nunito;
+
+}
+.sub_head{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.para_1{
+margin-top: 100px;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #888888;
+
+}
+.para_2{
+font-style: normal;
+margin-left: 325px;
+margin-bottom: 50px;
+font-weight: normal;
+font-size: 24px;
+line-height: 34px;
+width: 670px;
+text-align: center;
+color: #3E3E3E;
+}
+.line{
+    border-top: 2px dashed #B0B0B0;
+}
