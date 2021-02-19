@@ -1,7 +1,7 @@
 {
   "name": "pentafox-website",
   "private": true,
-  "description": "Pentafox Technologies is a Data age IT product solutions startup focused on transforming all kinds of business to the next level with the the power of Cloud embedded with intelligence from wide range of AI/ML capabilities.",
+  "description": "Pentafox Technologies is a Data age IT product solutions startup focused on transforming all kinds of business to the next level with the power of Cloud embedded with intelligence from wide range of AI/ML capabilities.",
   "version": "0.1.0",
   "author": "Sriram <sriram@pentafox.in>",
   "dependencies": {
