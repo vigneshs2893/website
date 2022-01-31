@@ -5,7 +5,7 @@ import { FooterWrapper } from './footer.css';
 import BackgroundImage from 'gatsby-background-image';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 
-const Footer = () => {
+const Footer = ({ hideLink }) => {
   const isMobileDevice = IsMobile();
   const data = useStaticQuery(graphql`
     query FooterQuery {
@@ -43,7 +43,7 @@ const Footer = () => {
               just say hello
             </p>
             <p className="mb-32">
-              {isMobileDevice ? 
+              {isMobileDevice ?
                 'Feel free to get in touch with us. We are always open to discussing new projects, creative ideas or opportunity to be part of your visions.'
                 :
                 <Fragment>
@@ -53,7 +53,7 @@ const Footer = () => {
                 </Fragment>
               }
             </p>
-            
+
             {isMobileDevice ? null : (
               <ul className="list-unstyled social-icons mb-40">
                 <li><a href={data.homeJson.footer.facebook} target="_blank"><i className="pentafox-facebook" /></a></li>
@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="col-12 col-sm-5 col-md-4">
             <p className="mb-24">
               <span>Address</span>
-              {isMobileDevice ? 
+              {isMobileDevice ?
                 data.homeJson.footer.address.mobile.map((item, i) => <Fragment key={i}>{item}<br/></Fragment>)
                 :
                 <Fragment>
@@ -122,25 +122,29 @@ const Footer = () => {
             {/* <a href="/" >FAQ</a>{' '}&#124;{' '}
             <a href="/" >Terms of use</a> */}
           </div>
-          <div className="right-col">
-            Designed by
-            <BackgroundImage
-              Tag="a"
-              fluid={data.homeJson.footer.prodjar.childImageSharp.fluid}
-              href="https://prodjar.com/"
-              target="_blank"
-              rel="no-allow"
-              className="prodjar-link"
-              onClick={() => {
-                trackCustomEvent({
-                  category: "Projar",
-                  action: "Click",
-                  label: "Prodjar Credits",
-                });
-              }}
-            >&nbsp;
-            </BackgroundImage>
-          </div>
+          {
+            !hideLink && (
+              <div className="right-col">
+                Designed by
+                <BackgroundImage
+                  Tag="a"
+                  fluid={data.homeJson.footer.prodjar.childImageSharp.fluid}
+                  href="https://prodjar.com/"
+                  target="_blank"
+                  rel="no-allow"
+                  className="prodjar-link"
+                  onClick={() => {
+                    trackCustomEvent({
+                      category: "Projar",
+                      action: "Click",
+                      label: "Prodjar Credits",
+                    });
+                  }}
+                >&nbsp;
+                </BackgroundImage>
+              </div>
+            )
+          }
         </div>
       </div>
     </FooterWrapper>

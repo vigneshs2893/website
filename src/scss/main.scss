@@ -6,3 +6,12 @@
 
 // ICON
 @import "icons/icons";
+
+
+.ReactModal__Content {
+  inset: 80px 140px 40px 140px !important;
+
+  @media (max-width: 767px) {
+    inset: 0 !important;
+  }
+}

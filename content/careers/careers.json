@@ -1,0 +1,26 @@
+{
+  "careers": {
+    "title": "Wanna work on right things?",
+    "description": "careers-desc.md",
+    "jobs": [
+      {
+        "title": "Front-End Developer",
+        "shortDescription": "Experience in ReactJS and interested in building performant web apps. Responsible for architecting and building web apps.",
+        "tags": ["ReactJS", "Full Time", "1-2 years"],
+        "description": "position-1.md"
+      },
+      {
+        "title": "Mobile App Developer",
+        "shortDescription": "Experience in React Native and interested in building performant mobile apps on both the iOS and Android platforms.",
+        "tags": ["React Native", "Full Time", "1-2 years"],
+        "description": "position-2.md"
+      },
+      {
+        "title": "Python Developer",
+        "shortDescription": "Design, build and maintain efficient, reusable, and reliable REST APIs. A strong team player with a commitment to perfection.",
+        "tags": ["Flask/Django", "Full Time", "2+ years"],
+        "description": "position-3.md"
+      }
+    ]
+  }
+}

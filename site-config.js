@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   siteTitle: `Pentafox Technologies | Design the Digital World`,
-  siteTitleShort: `Pentafox | Design the Digital World`,
+  siteTitleShort: `Pentafox`,
   siteDescription: `Pentafox Technologies is a Data age IT product solutions startup focused on transforming all kinds of business to the next level with the the power of Cloud embedded with intelligence from wide range of AI/ML capabilities.`,
   siteUrl: `https://pentafox.in`,
   themeColor: `#000`,
