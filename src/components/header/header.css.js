@@ -15,7 +15,7 @@ export const HeaderWrapper = styled.header`
   min-height: 56px;
 
   @media(max-width: 991px) {
-    top: 32px;
+    top: 16px;
     min-height: 72px;
   }
 

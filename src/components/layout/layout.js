@@ -12,15 +12,15 @@ import HeadWithQuery from "../head/head"
 import Header from "../header/header"
 import "scss/main.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, headProps={}, hideLink }) => {
   return (
     <>
-      <HeadWithQuery />
+      <HeadWithQuery {...headProps} />
       <Header />
       <div className="content-wrap">
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer hideLink={hideLink} />
     </>
   )
 }

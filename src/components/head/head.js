@@ -7,10 +7,11 @@ import schemaGenerator from 'helpers/schemaGenerator';
 
 const Head = ({
   siteTitle,
+  siteTitleShort,
   siteDescription,
   siteUrl,
   pageTitle,
-  pageTitleFull = pageTitle ? `${siteTitle}: ${pageTitle}` : siteTitle,
+  pageTitleFull = pageTitle ? `${pageTitle} | ${siteTitleShort}` : siteTitle,
   themeColor,
   social,
   imageUrl,
