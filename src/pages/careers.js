@@ -4,9 +4,9 @@ import LayoutCommon from "../components/layout/layoutCommon"
 import { HomeWrapper } from "../components/home/home.css"
 import { useStaticQuery, graphql } from "gatsby"
 import PageWrapper, { TopSectionWrapper } from "../components/PageWrapper/PageWrapper"
-import { BenifitsContent, CareersContent } from "../components/PageWrapper/careers.css"
+import { CareersContent } from "../components/PageWrapper/careers.css"
 import JobsList from "../components/JobsList/JobsList"
-import BenifitsSection from "../components/Benifits/BenifitsSection"
+import BenefitsSection from "../components/Benefits/BenefitsSection"
 
 const CareerPage = () => {
   const data = useStaticQuery(graphql`query CareersQuery {
@@ -23,7 +23,7 @@ const CareerPage = () => {
         title
         description
       }
-      benifits {
+      benefits {
         title
         description
         list {
@@ -69,7 +69,7 @@ const CareerPage = () => {
 `)
 
   return (
-    <LayoutCommon hideLink showCareers={false} headProps={{
+    <LayoutCommon hideLink showCareers={false} showDarkLogo={false} headProps={{
       pageTitle: 'Careers'
     }}>
       {/* career page starts */}
@@ -82,10 +82,10 @@ const CareerPage = () => {
             </div>
           </TopSectionWrapper>
 
-          <BenifitsSection
-            title={data.careersJson.careers.benifits.title}
-            description={data.careersJson.careers.benifits.description}
-            data={data.careersJson.careers.benifits.list}
+          <BenefitsSection
+            title={data.careersJson.careers.benefits.title}
+            description={data.careersJson.careers.benefits.description}
+            data={data.careersJson.careers.benefits.list}
           />
 
           <div className="container lg-container">
