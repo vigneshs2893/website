@@ -218,7 +218,7 @@ export const FooterWrapper = styled.footer`
 
     ${xs}{
       .right-col {
-        flex: 1;
+        flex: 1 !important;
         font-size: 9px;
         line-height: 150%;
       }
