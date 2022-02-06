@@ -1,15 +1,146 @@
 import styled, { css } from 'styled-components';
 import { sm, md, xs } from 'helpers/device';
 
-export const CareersContent = styled.div`
-  padding-top: 20px;
+export const BenifitsContent = styled.section`
+  padding: 40px 0;
+  background-color: #F5F5F5;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   .heading {
-    color: #999;
-    font-size: 1.4rem;
+    font-weight: 600;
+    color: #3e3e3e;
+    margin-bottom: 10px;
+  }
+
+  p {
+    width: 65vw;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: #3E3E3E;
+    text-align: center;
+  }
+
+  .benefits {
+    display: grid;
+    margin: 40px auto;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 95%;
+
+    .benefit-card {
+      text-align: left;
+      padding-left: 55px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 40px;
+
+      figure {
+        width: 40px;
+        height: 37px;
+        padding: 10px;
+        left: 0;
+        margin: 0;
+
+        &::before,
+        &::after {
+          background-size: contain;
+        }
+      }
+      span {
+        color: #444;
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+
+  .benefits-section {
+    padding: 30px 0;
+  }
+
+  ${sm} {
+    p {
+      width: 80vw;
+    }
+
+    .benefits {
+      max-width: 76%;
+    }
+  }
+
+  ${md} {
+    p {
+      width: 70%;
+      margin-bottom: 50px;
+    }
+
+    .benefits {
+      max-width: 50%;
+    }
+  }
+
+  ${xs} {
+    min-height: 40vh;
+
+    .benefits-section {
+      .heading {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      width: 95%;
+    }
+
+    .benefits {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .benefit-card {
+        padding-left: 0;
+        text-align: center;
+        padding-top: 50px;
+        height: auto;
+
+        figure {
+          left: 0;
+          top: 0;
+          width: 100%;
+
+          &::before,
+          &::after {
+            background-position: center;
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const CareersContent = styled.div`
+  padding-top: 40px;
+
+  .heading {
+    font-size: 1.8rem;
+    color: #3e3e3e;
+    font-weight: 600;
+    /* font-size: 1.4rem; */
     margin-bottom: 20px;
     position: relative;
     /* text-align: center; */
+
+    &+p {
+      color: #3E3E3E;
+      margin-bottom: 40px;
+    }
 
     &::after {
       /* content: ''; */
@@ -37,7 +168,7 @@ export const CareersContent = styled.div`
       transition: all .35s ease-in-out;
 
       &:hover {
-        box-shadow: 0 12px 20px -10px #ccc;
+        box-shadow: 0 8px 20px -10px #ccc;
       }
 
       .job-title {
@@ -59,11 +190,12 @@ export const CareersContent = styled.div`
           display: inline-block;
           padding: 2px 8px;
           margin-right: 8px;
+          margin-bottom: 4px;
           border-radius: 2px;
           color: #fff;
           font-size: .8rem;
           line-height: 1rem;
-          background-color: rgba(41, 31, 51, .8);
+          background-color: rgba(41, 31, 51, .7);
         }
       }
     }
@@ -72,11 +204,14 @@ export const CareersContent = styled.div`
   .job-email {
     padding-top: 40px;
     /* text-align: center; */
-    font-size: 1.2rem;
-    color: #bbb;
 
+    color: #bbb;
+    p {
+      font-size: 14px;
+      color: #888;
+    }
     a {
-      color: #777;
+      color: #444;
       transition: all .3s ease-in-out;
 
       &:hover {
@@ -85,40 +220,16 @@ export const CareersContent = styled.div`
     }
   }
 
-  .benefits {
-    display: grid;
-    grid-gap: 16px;
-    grid-template-columns: 1fr;
-    /* margin-bottom: 40px; */
-
-    .benefit-card {
-      h5 {
-        font-size: 1.2rem;
-        color: #777;
-        margin-bottom: 5px;
-      }
-      p {
-        font-size: 1rem;
-        color: #999;
-        margin-bottom: 8px;
-      }
-
-    }
-  }
-
-  .benefits-section {
-    padding: 30px 0;
-  }
 
   ${sm} {
-    padding-top: 32px;
+    padding-top: 60px;
 
     .heading {
-      color: #aaa;
+      color: #3e3e3e;
       font-size: 2rem;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       position: relative;
-      /* text-align: center; */
+      text-align: center;
 
       &::after {
         /* content: ''; */
@@ -132,32 +243,15 @@ export const CareersContent = styled.div`
       }
     }
 
-    .benefits-section {
-      padding-top: 40px;
-      padding-bottom: 60px;
-    }
-
-    .benefits {
-      max-width: 60%;
-      grid-template-columns: 1fr 1fr;
-      /* margin-bottom: 40px; */
-
-      .benefit-card {
-        h5 {
-          font-size: 1.3rem;
-          color: #777;
-          margin-bottom: 5px;
-        }
-        p {
-          font-size: 1rem;
-          color: #999;
-        }
-      }
-    }
-
     .job-listing {
+      max-width: 75%;
+      margin: 0 auto;
       grid-gap: 20px;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+
+    .job-email {
+      font-size: 16px;
     }
   }
 `;

@@ -2,6 +2,10 @@
   "careers": {
     "title": "Wanna work on right things?",
     "description": "careers-desc.md",
+    "jobSection": {
+      "title": "Current opportunities",
+      "description": "We are proud to be an equal opportunity workplace and is an affirmative action employer."
+    },
     "jobs": [
       {
         "title": "Front-End Developer",
@@ -21,6 +25,28 @@
         "tags": ["Flask/Django", "Full Time", "2+ years"],
         "description": "position-3.md"
       }
-    ]
+    ],
+    "benifits": {
+      "title": "Benifits @ Pentafox",
+      "description": "We thoughtfully designed to enhance your health and wellbeing, and generous enough to make it easy for you to take good care of yourself (now, and in the future). So we can build for everyone, together. *",
+      "list": [
+        {
+          "title": "Health Insurance",
+          "image": "../../src/images/icons/careers/medikit-icon.png"
+        },
+        {
+          "title": "Financial Wellbeing",
+          "image": "../../src/images/icons/careers/card-icon.png"
+        },
+        {
+          "title": "Food & Accommodation",
+          "image": "../../src/images/icons/careers/food-icon.png"
+        },
+        {
+          "title": "Flexibility and time off",
+          "image": "../../src/images/icons/careers/time-icon.png"
+        }
+      ]
+    }
   }
 }

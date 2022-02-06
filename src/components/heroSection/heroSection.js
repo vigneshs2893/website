@@ -17,52 +17,51 @@ const FigureWrapper = ({ children, id, ...props}) => {
 }
 
 const HeroSection = () => {
-  const data = useStaticQuery(graphql`
-    query HomepageQuery {
-      homeJson {
-        title
-        landingTitle
-        landingDescription {
-          childMarkdownRemark {
-            html
-            rawMarkdownBody
+  const data = useStaticQuery(graphql`query HomepageQuery {
+  homeJson {
+    title
+    landingTitle
+    landingDescription {
+      childMarkdownRemark {
+        html
+        rawMarkdownBody
+      }
+    }
+    landingImage {
+      childImageSharp {
+        fluid(
+          maxHeight: 800,
+          quality: 90,
+          traceSVG: {
+            color: "#292733"
+            turnPolicy: TURNPOLICY_MINORITY
           }
+        ) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
-        landingImage {
-          childImageSharp {
-            fluid(
-              maxHeight: 800,
-              quality: 90,
-              traceSVG: {
-                color: "#292733"
-                turnPolicy: TURNPOLICY_MINORITY
-              }
-            ) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+      }
+    }
+    bannerSection {
+      title
+      content
+      image {
+        childImageSharp {
+          fluid(
+            maxHeight: 500,
+            quality: 90,
+            traceSVG: {
+              color: "#292733"
+              turnPolicy: TURNPOLICY_MAJORITY
             }
-          }
-        }
-        bannerSection {
-          title
-          content
-          image {
-            childImageSharp {
-              fluid(
-                maxHeight: 500,
-                quality: 90,
-                traceSVG: {
-                  color: "#292733"
-                  turnPolicy: TURNPOLICY_MAJORITY
-                }
-              ) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
-              }
-            }
+          ) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
     }
-  `);
+  }
+}
+`);
 
   return (
     <HeroSectionWrapper>
@@ -88,7 +87,7 @@ const HeroSection = () => {
                   <p>{item.content}</p>
                 </figcaption>
               </FigureWrapper>
-            )
+            );
           })
         }
       </div>

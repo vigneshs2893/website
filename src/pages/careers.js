@@ -1,50 +1,75 @@
 import React from "react"
 
-import Layout from "../components/layout/layout"
+import LayoutCommon from "../components/layout/layoutCommon"
 import { HomeWrapper } from "../components/home/home.css"
 import { useStaticQuery, graphql } from "gatsby"
 import PageWrapper, { TopSectionWrapper } from "../components/PageWrapper/PageWrapper"
-import { CareersContent } from "../components/PageWrapper/careers.css"
+import { BenifitsContent, CareersContent } from "../components/PageWrapper/careers.css"
 import JobsList from "../components/JobsList/JobsList"
+import BenifitsSection from "../components/Benifits/BenifitsSection"
 
 const CareerPage = () => {
-  const data = useStaticQuery(graphql`
-    query CareersQuery {
-      careersJson {
-        careers {
+  const data = useStaticQuery(graphql`query CareersQuery {
+  careersJson {
+    careers {
+      title
+      description {
+        childMarkdownRemark {
+          html
+          rawMarkdownBody
+        }
+      }
+      jobSection {
+        title
+        description
+      }
+      benifits {
+        title
+        description
+        list {
           title
-          description {
-            childMarkdownRemark {
-              html
-              rawMarkdownBody
-            }
-          }
-          jobs {
-            title
-            tags
-            shortDescription
-            description {
-              childrenMarkdownRemark {
-                html
-                frontmatter {
-                  ctc
-                  education
-                  jobType
-                  location
-                  profile
-                  skills
-                  title
+          image {
+            childImageSharp {
+              fluid(
+                maxHeight: 80,
+                quality: 100,
+                traceSVG: {
+                  color: "#6e6e6e"
+                  turnPolicy: TURNPOLICY_MAJORITY
                 }
+              ) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }
         }
       }
+      jobs {
+        title
+        tags
+        shortDescription
+        description {
+          childrenMarkdownRemark {
+            html
+            frontmatter {
+              ctc
+              education
+              jobType
+              location
+              profile
+              skills
+              title
+            }
+          }
+        }
+      }
     }
-  `)
+  }
+}
+`)
 
   return (
-    <Layout hideLink headProps={{
+    <LayoutCommon hideLink showCareers={false} headProps={{
       pageTitle: 'Careers'
     }}>
       {/* career page starts */}
@@ -57,30 +82,20 @@ const CareerPage = () => {
             </div>
           </TopSectionWrapper>
 
+          <BenifitsSection
+            title={data.careersJson.careers.benifits.title}
+            description={data.careersJson.careers.benifits.description}
+            data={data.careersJson.careers.benifits.list}
+          />
+
           <div className="container lg-container">
             <CareersContent>
-              <section className="benefits-section">
-                <h3 className="heading">Benefits at Pentafox</h3>
-                <div className="benefits">
-                  <div className="benefit-card">
-                    <h5>Health Insurance</h5>
-                  </div>
-                  <div className="benefit-card">
-                    <h5>Financial wellbeing</h5>
-                  </div>
-                  <div className="benefit-card">
-                    <h5>Flexibility and time off</h5>
-                  </div>
-                  <div className="benefit-card">
-                    <h5>Flexibility and time off</h5>
-                  </div>
-                </div>
-              </section>
+              <h2 className="heading text-center">{data.careersJson.careers.jobSection.title}</h2>
+              <p className="text-center">{data.careersJson.careers.jobSection.description}</p>
 
-              <h3 className="heading">Current opportunities</h3>
               <JobsList data={data.careersJson.careers.jobs} />
 
-              <div className="job-email">
+              <div className="job-email text-center">
                 <p>Email your CV to <a href="mailto:jobs@pentafox.in" title="Email us">jobs@pentafox.in</a> with &lt;Job-Title&gt; as subject.</p>
               </div>
             </CareersContent>
@@ -88,7 +103,7 @@ const CareerPage = () => {
         </PageWrapper>
       </HomeWrapper>
       {/* career page ends */}
-    </Layout>
+    </LayoutCommon>
   )
 }
 
