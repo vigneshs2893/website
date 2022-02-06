@@ -37,7 +37,7 @@ const ContentSection = ({
                 </ul>
               </Fragment>
               : null}
-            
+
             {listWithIcons ?
               <ul className="clearfix list-unstyled list-card">
                 {category.map((item, i) => {
@@ -51,7 +51,7 @@ const ContentSection = ({
                         <span>{item.title}</span>
                         {item.content}
                       </li>
-                    )
+                    );
                   })}
               </ul>
             : null}

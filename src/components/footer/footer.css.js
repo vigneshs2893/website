@@ -9,6 +9,27 @@ export const FooterWrapper = styled.footer`
   padding-top: 32px;
   margin-top: 32px;
 
+  .section-title {
+    color: #757575;
+  }
+
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 8px;
+
+    .location-title {
+      margin-bottom: 8px;
+      color: #f1f1f1;
+    }
+    .location-address {
+      margin-bottom: 0;
+      color: #959595;
+      font-size: 13px;
+    }
+  }
+
   ${sm}{
     padding: 56px 0 32px;
   }
@@ -19,7 +40,7 @@ export const FooterWrapper = styled.footer`
     span {
       display: block;
       color: #757575;
-      
+
       ${sm} {
         font-size: ${theme.baseSecondary};
       }
@@ -60,7 +81,7 @@ export const FooterWrapper = styled.footer`
         &:last-child {
           margin-right: 0;
         }
-  
+
         a {
           color: #FFFFFF;
 
@@ -193,10 +214,14 @@ export const FooterWrapper = styled.footer`
     padding: 20px 0;
     border-top: 1px dashed rgba(255, 255, 255, 0.3);
     display: flex;
+    align-items: center;
 
     ${xs}{
-      font-size: 9px;
-      line-height: 150%;
+      .right-col {
+        flex: 1;
+        font-size: 9px;
+        line-height: 150%;
+      }
     }
 
     a {

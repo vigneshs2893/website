@@ -12,11 +12,11 @@ import HeadWithQuery from "../head/head"
 import Header from "../header/header"
 import "scss/main.scss"
 
-const Layout = ({ children, headProps={}, hideLink }) => {
+const LayoutCommon = ({ children, headProps={}, hideLink, showCareers=true }) => {
   return (
     <>
       <HeadWithQuery {...headProps} />
-      <Header />
+      <Header showCareers={showCareers} />
       <div className="content-wrap">
         <main>{children}</main>
       </div>
@@ -25,8 +25,8 @@ const Layout = ({ children, headProps={}, hideLink }) => {
   )
 }
 
-Layout.propTypes = {
+LayoutCommon.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default LayoutCommon

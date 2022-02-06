@@ -22,6 +22,24 @@
   "footer": {
     "email": "hello@pentafox.in",
     "mobile": "+91 90432 69523",
+    "locations": [
+      {
+        "title": "Bengaluru",
+        "address": "5th floor, 91Springboard, Trifecta Adatto, ITPL Main Rd, Garudacharpalya, Mahadevapura, Bengaluru, Karnataka 560048"
+      },
+      {
+        "title": "Chennai",
+        "address": "No.49 Journalist Colony, Thiruvanmiyur Chennai 600041"
+      },
+      {
+        "title": "Erode",
+        "address": "920, 2nd Floor, Park Rd, Thirunagar Colony, Erode, Tamil Nadu 638001"
+      },
+      {
+        "title": "US",
+        "address": "201, Maplehurst Pt, Highlands Ranch, CO 80126"
+      }
+    ],
     "address": {
       "mobile": [
         "Pentafox Technologies Pvt Ltd 91springboard, 5th floor, Trifecta Adatto, ITPL main road, Garudacharpalya, Bengaluru 560048"
