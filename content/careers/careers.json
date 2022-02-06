@@ -10,24 +10,24 @@
       {
         "title": "Front-End Developer",
         "shortDescription": "Experience in ReactJS and interested in building performant web apps. Responsible for architecting and building web apps.",
-        "tags": ["ReactJS", "Full Time", "1-2 years"],
+        "tags": ["ReactJS", "Full Time / Remote", "1-2 years"],
         "description": "position-1.md"
       },
       {
         "title": "Mobile App Developer",
         "shortDescription": "Experience in React Native and interested in building performant mobile apps on both the iOS and Android platforms.",
-        "tags": ["React Native", "Full Time", "1-2 years"],
+        "tags": ["React Native", "Full Time / Remote", "1-2 years"],
         "description": "position-2.md"
       },
       {
         "title": "Python Developer",
         "shortDescription": "Design, build and maintain efficient, reusable, and reliable REST APIs. A strong team player with a commitment to perfection.",
-        "tags": ["Flask/Django", "Full Time", "2+ years"],
+        "tags": ["Flask/Django", "Full Time / Remote", "2+ years"],
         "description": "position-3.md"
       }
     ],
-    "benifits": {
-      "title": "Benifits @ Pentafox",
+    "benefits": {
+      "title": "Benefits @ Pentafox",
       "description": "We thoughtfully designed to enhance your health and wellbeing, and generous enough to make it easy for you to take good care of yourself (now, and in the future). So we can build for everyone, together. *",
       "list": [
         {

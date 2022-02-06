@@ -12,11 +12,11 @@ import HeadWithQuery from "../head/head"
 import Header from "../header/header"
 import "scss/main.scss"
 
-const LayoutCommon = ({ children, headProps={}, hideLink, showCareers=true }) => {
+const LayoutCommon = ({ children, headProps={}, hideLink, showCareers=true, showDarkLogo }) => {
   return (
     <>
       <HeadWithQuery {...headProps} />
-      <Header showCareers={showCareers} />
+      <Header showCareers={showCareers} showDarkLogo={showDarkLogo} />
       <div className="content-wrap">
         <main>{children}</main>
       </div>

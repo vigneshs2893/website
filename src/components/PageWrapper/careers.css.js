@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { sm, md, xs } from 'helpers/device';
 
-export const BenifitsContent = styled.section`
+export const BenefitsContent = styled.section`
   padding: 40px 0;
   background-color: #F5F5F5;
   min-height: 400px;

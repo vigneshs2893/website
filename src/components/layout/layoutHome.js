@@ -16,7 +16,7 @@ const LayoutHome = ({ children, headProps={}, hideLink, showCareers=true }) => {
   return (
     <>
       <HeadWithQuery {...headProps} />
-      <Header showCareers={showCareers} showDark={false} />
+      <Header showCareers={showCareers} showDarkLogo={false} />
       <div className="content-wrap">
         <main>{children}</main>
       </div>

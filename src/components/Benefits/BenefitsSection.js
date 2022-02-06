@@ -1,14 +1,14 @@
 import React from 'react';
 import BackgroundImage from 'gatsby-background-image'
-import { BenifitsContent } from '../PageWrapper/careers.css';
+import { BenefitsContent } from '../PageWrapper/careers.css';
 
-const BenifitsSection = ({
+const BenefitsSection = ({
   title,
   description,
   data
 }) => {
   return (
-    <BenifitsContent>
+    <BenefitsContent>
       <div className="container lg-container">
         <div className="benefits-section">
           <h2 className="heading">{title}</h2>
@@ -31,8 +31,8 @@ const BenifitsSection = ({
           </div>
         </div>
       </div>
-    </BenifitsContent>
+    </BenefitsContent>
   )
 }
 
-export default BenifitsSection;
+export default BenefitsSection;
