@@ -7,25 +7,45 @@ export const ClientLogoSection = styled.div`
   text-align: center;
   // margin-bottom: 64px;
   ${sm} {
+    padding: 50px 0;
     // margin-bottom: 120px;
+    p {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
   }
-  
+
   ul {
     list-style: none;
     padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
     ${sm}{
       width: 70%;
     }
 
     li {
-      flex: 1 1;
+      display: inline-block;
+      margin: 0 20px;
+      margin-bottom: 30px;
+      transition: all .35s ease-in-out;
 
       img {
-        height: 20px;
+        filter: grayscale(90%);
+        height: 38px;
         ${sm} {
-          height: 28px;
+          height: 45px;
         }
+      }
+
+      &:hover img {
+        filter: none;
       }
     }
   }

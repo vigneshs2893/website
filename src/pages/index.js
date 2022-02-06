@@ -3,7 +3,7 @@ import React from "react"
 import LayoutHome from "../components/layout/layoutHome"
 import HeroSection from '../components/heroSection/heroSection';
 import ContentSection from "../components/contentSection/contentSection"
-// import ClientLogo from "../components/clientsLogo/clientsLogo"
+import ClientLogo from "../components/clientsLogo/clientsLogo"
 import { HomeWrapper } from "../components/home/home.css"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -89,7 +89,7 @@ const IndexPage = () => {
               />
             );
           })}
-        {/* <ClientLogo /> */}
+        <ClientLogo />
       </HomeWrapper>
       {/* home page ends */}
     </LayoutHome>
