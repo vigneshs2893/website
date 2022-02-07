@@ -4,23 +4,23 @@
     "description": "careers-desc.md",
     "jobSection": {
       "title": "Current opportunities",
-      "description": "We are proud to be an equal opportunity workplace and is an affirmative action employer."
+      "description": "We are proud to be an equal opportunity workplace and an affirmative action employer."
     },
     "jobs": [
       {
-        "title": "Front-End Developer",
+        "title": "Front end developer",
         "shortDescription": "Experience in ReactJS and interested in building performant web apps. Responsible for architecting and building web apps.",
         "tags": ["ReactJS", "Full Time / Remote", "1-2 years"],
         "description": "position-1.md"
       },
       {
-        "title": "Mobile App Developer",
+        "title": "Mobile app developer",
         "shortDescription": "Experience in React Native and interested in building performant mobile apps on both the iOS and Android platforms.",
         "tags": ["React Native", "Full Time / Remote", "1-2 years"],
         "description": "position-2.md"
       },
       {
-        "title": "Python Developer",
+        "title": "Python developer",
         "shortDescription": "Design, build and maintain efficient, reusable, and reliable REST APIs. A strong team player with a commitment to perfection.",
         "tags": ["Flask/Django", "Full Time / Remote", "2+ years"],
         "description": "position-3.md"
@@ -28,18 +28,18 @@
     ],
     "benefits": {
       "title": "Benefits @ Pentafox",
-      "description": "We thoughtfully designed to enhance your health and wellbeing, and generous enough to make it easy for you to take good care of yourself (now, and in the future). So we can build for everyone, together. *",
+      "description": "Thoughtfully packaged benefits that enhance the lifestyle for every employee keeping in mind their physical and mental wellbeing. Financial wellness is also competitive enough to make it easy for every employee to take good care of self and family (now, and in the future) and so we can build for everyone, together.",
       "list": [
         {
-          "title": "Health Insurance",
+          "title": "Health and mental wellness",
           "image": "../../src/images/icons/careers/medikit-icon.png"
         },
         {
-          "title": "Financial Wellbeing",
+          "title": "Financial wellbeing",
           "image": "../../src/images/icons/careers/card-icon.png"
         },
         {
-          "title": "Food & Accommodation",
+          "title": "Home cooked food",
           "image": "../../src/images/icons/careers/food-icon.png"
         },
         {

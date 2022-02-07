@@ -19,6 +19,58 @@
     "content": "Enable your applications with Intelligence",
     "image": "../../src/images/cv-banner.jpg"
   }],
+  "clients": {
+    "title": "Our Clients",
+    "description": "We take responsibility to increase your business tremendously with technological advantage and support you to stand out uniquely and consistently in the market.",
+    "list": [
+      {
+        "title": "Desikadaya",
+        "image": "../../src/images/logos/desikadaya.png"
+      },
+      {
+        "title": "Petromoney",
+        "image": "../../src/images/logos/petromoney.png"
+      },
+      {
+        "title": "StartupTN",
+        "image": "../../src/images/logos/startuptn.png"
+      },
+      {
+        "title": "Suraaj Consultants",
+        "image": "../../src/images/logos/suraaj.png"
+      },
+      {
+        "title": "GeoPITS",
+        "image": "../../src/images/logos/geopits.png"
+      },
+      {
+        "title": "10XTD",
+        "image": "../../src/images/logos/10xtd.png"
+      },
+      {
+        "title": "Hope Tutors",
+        "image": "../../src/images/logos/hopetutors.png"
+      },
+      {
+        "title": "Lumendata",
+        "image": "../../src/images/logos/lumendata.png"
+      }
+    ]
+  },
+  "partners": {
+    "title": "Our Partners",
+    "description": "We have partnered with leading technology platforms and service providers to design and deliver the fastest and state-of-the-art comprehensive solutions to our customers.",
+    "list": [
+      {
+        "title": "ACL - a since company",
+        "image": "../../src/images/logos/acl.png"
+      },
+      {
+        "title": "Prodjar",
+        "image": "../../src/images/logos/prodjar.png"
+      }
+    ]
+  },
   "footer": {
     "email": "hello@pentafox.in",
     "mobile": "+91 90432 69523",
