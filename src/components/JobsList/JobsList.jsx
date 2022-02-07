@@ -2,6 +2,7 @@ import React, { useState } from "react"
 // import Modal from "../Modal/Modal";
 import ReactModal from 'react-modal';
 import { ModalBody, ModalHeader } from "../Modal/Modal.css";
+import '../../scss/modal.css';
 
 ReactModal.defaultStyles.overlay.backgroundColor = 'rgba(0,0,0,.3)';
 ReactModal.defaultStyles.overlay.zIndex = 50;
@@ -49,7 +50,10 @@ const JobsList = ({ data }) => {
           )
         })}
       </div>
-      <ReactModal isOpen={selectedJob.title} onRequestClose={() => setSelectedJob({})}>
+      <ReactModal
+        isOpen={selectedJob.title}
+        onRequestClose={() => setSelectedJob({})}
+        >
         <ModalHeader>
           <h1>{selectedJob.title}</h1>
           <span onClick={() => setSelectedJob({})} />

@@ -76,7 +76,7 @@ const CareerPage = () => {
       <HomeWrapper>
         <PageWrapper>
           <TopSectionWrapper>
-            <div className="container lg-container">
+            <div className="">
               <h1>{data.careersJson.careers.title}</h1>
               <p>{data.careersJson.careers.description.childMarkdownRemark.rawMarkdownBody}</p>
             </div>
@@ -88,7 +88,7 @@ const CareerPage = () => {
             data={data.careersJson.careers.benefits.list}
           />
 
-          <div className="container lg-container">
+          <div className="">
             <CareersContent>
               <h2 className="heading text-center">{data.careersJson.careers.jobSection.title}</h2>
               <p className="text-center">{data.careersJson.careers.jobSection.description}</p>
