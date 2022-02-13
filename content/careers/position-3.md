@@ -23,6 +23,6 @@ skills: ['Python', 'Flask/Django', 'MySQL/Postgres']
 ### Responsibilities
 You are expected to 
   - collect requirements from lead/owner
-  - create a workplan and work on the delivery of items
-  - communicate properly and colloborate with team
+  - create a work plan and work on the delivery of items
+  - communicate properly and collaborate with team
   - come up with new ideas to improve the development flow and increase productivity
