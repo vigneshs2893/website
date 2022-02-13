@@ -11,7 +11,7 @@ skills: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'React Native']
   - Experience taking a project through its entire life cycle
   - 1-2 years' experience developing mobile applications using React Native
 
-### Skils Required
+### Skills Required
   - Hands on experience with Javascript and UI design/development using HTML/CSS
   - Working in an agile environment and have a work experience with Agile/Scrum
   - Hands on experience on any version control system like Git, GitHub/Gitlab/Bitbucket
@@ -21,7 +21,7 @@ skills: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'React Native']
 
 ### Responsibilities
 You are expected to 
-  - collect requirements from lead/owner
+  - collect requirements from the lead/owner
   - create a work plan and work on the delivery of items
-  - communicate properly and collaborate with team
+  - communicate properly and collaborate with the team
   - come up with new ideas to improve the development flow and increase productivity
