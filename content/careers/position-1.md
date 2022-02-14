@@ -17,7 +17,7 @@ skills: ['HTML', 'CSS', 'Javascript/Typescript', 'ReactJS']
   - Hands on experience with Javascript and UI design/development using HTML/CSS
   - Working in an agile environment and have a work experience with Agile/Scrum
   - Hands on experience on any version control system like Git, GitHub/Gitlab/Bitbucket
-  - Knowledge of vanila JS and DOM APIs
+  - Knowledge of vanilla JS and DOM APIs
   - Ability to work in a fast paced, growth mode start-up environment
   - Willingness to roll up one's sleeves and do whatever has to be done, a hands-on approach to leading by example, and demonstrating a sense of ownership
 
