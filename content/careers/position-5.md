@@ -1,6 +1,6 @@
 ---
 title: Platform Engineer
-profile: Our team is looking for a champion who would drive and deliver our platform teams from cross functional teams by adopting Infrastructure as Code (IaC) practices and mindset. The duties include Design, architect, and building self-service, self-healing, synthetic monitoring, and alerting platform/tools for various projects in the organization.
+profile: Our team is looking for a champion who would drive and deliver our platform needs from cross functional teams by adopting Infrastructure as Code (IaC) practices and mindset. The duties include Design, architect, and building self-service, self-healing, synthetic monitoring, and alerting platform/tools for various projects in the organization.
 location: ['Erode', 'Coimbatore']
 jobType: ['Full Time', 'Remote']
 ctc: Based on Candidates Exp.
