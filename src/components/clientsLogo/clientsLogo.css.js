@@ -27,7 +27,7 @@ export const ClientLogoSection = styled.div`
     margin: 0;
 
     ${sm}{
-      width: 70%;
+      width: 78%;
     }
 
     li {

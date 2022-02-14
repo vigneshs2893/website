@@ -12,9 +12,10 @@ const ClientLogo = () => {
         description
         list {
           title
+          size
           image {
             childImageSharp {
-              fixed(
+              md: fixed(
                 height: 45
                 quality: 100
                 traceSVG: {
@@ -24,12 +25,18 @@ const ClientLogo = () => {
               ) {
                 ...GatsbyImageSharpFixed_withWebp_tracedSVG
               }
-            }
-          }
-          mobile: image {
-            childImageSharp {
-              fixed(
-                height: 32
+              lg: fixed(
+                height: 100
+                quality: 100
+                traceSVG: {
+                  color: "#323023"
+                  turnPolicy: TURNPOLICY_MINORITY
+                }
+              ) {
+                ...GatsbyImageSharpFixed_withWebp_tracedSVG
+              }
+              mobile: fixed(
+                height: 100
                 quality: 100
                 traceSVG: {
                   color: "#323023"
@@ -96,9 +103,9 @@ const ClientLogo = () => {
                       title={item.title}
                       alt={item.title}
                       fixed={[
-                        item.image.childImageSharp.fixed,
+                        item.image.childImageSharp[item.size || 'md'],
                         {
-                          ...item.mobile.childImageSharp.fixed,
+                          ...item.image.childImageSharp.mobile,
                           media: `(max-width: 767px)`,
                         },
                       ]}
