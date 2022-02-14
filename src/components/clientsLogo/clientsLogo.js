@@ -36,7 +36,7 @@ const ClientLogo = () => {
                 ...GatsbyImageSharpFixed_withWebp_tracedSVG
               }
               mobile: fixed(
-                height: 100
+                height: 32
                 quality: 100
                 traceSVG: {
                   color: "#323023"
