@@ -4,8 +4,9 @@ profile: We are looking for a React developer interested in building performant 
 location: ['Erode', 'Coimbatore']
 jobType: ['Full Time', 'Remote']
 ctc: Based on Candidates Exp.
-education: Any Professional Degree
-skills: ['HTML', 'CSS', 'Javascript', 'ReactJS']
+education: B.Tech/M.Tech/B.E./BSc (CS)/MSc (CS)/BCA/MCA
+experience: 1-2 years
+skills: ['HTML', 'CSS', 'Javascript/Typescript', 'ReactJS']
 ---
 ### Experience Required
   - Experience taking a project through its entire life cycle

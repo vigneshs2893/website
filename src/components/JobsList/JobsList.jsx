@@ -17,14 +17,16 @@ const JobMeta = ({ data={} }) => {
       <h3>Job Profile</h3>
       <p>{data.profile}</p>
       <div className="meta-grid">
-        <div>Job Type</div>
+        <div className="bold">Job Type</div>
         <div>: {data.jobType.join(', ')}</div>
-        <div>Location</div>
+        <div className="bold">Location</div>
         <div>: {data.location.join(', ')}</div>
-        <div>Skills</div>
-        <div>: {data.skills.join(', ')}</div>
-        <div>Education</div>
+        <div className="bold">Education</div>
         <div>: {data.education}</div>
+        <div className="bold">Skills</div>
+        <div>: {data.skills.join(', ')}</div>
+        <div className="bold">Experience</div>
+        <div>: {data.experience}</div>
       </div>
     </div>
   )

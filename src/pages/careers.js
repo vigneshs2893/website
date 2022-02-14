@@ -54,6 +54,7 @@ const CareerPage = () => {
             frontmatter {
               ctc
               education
+              experience
               jobType
               location
               profile

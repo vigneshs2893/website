@@ -4,7 +4,8 @@ profile: We are looking for a backend developer interested to design, build and 
 location: ['Erode', 'Coimbatore']
 jobType: ['Full Time', 'Remote']
 ctc: Based on Candidates Exp.
-education: Any Professional Degree
+education: B.Tech/M.Tech/B.E./BSc (CS)/MSc (CS)/BCA/MCA
+experience: 2+ years
 skills: ['Python', 'Flask/Django', 'MySQL/Postgres']
 ---
 ### Experience Required

@@ -4,8 +4,9 @@ profile: We are looking for a React Native developer interested in building perf
 location: ['Erode', 'Coimbatore']
 jobType: ['Full Time', 'Remote']
 ctc: Based on Candidates Exp.
-education: Any Professional Degree
-skills: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'React Native']
+education: B.Tech/M.Tech/B.E./BSc (CS)/MSc (CS)/BCA/MCA
+experience: 1-2 years
+skills: ['React Native', 'ReactJS', 'HTML', 'CSS', 'Javascript/Typescript']
 ---
 ### Experience Required
   - Experience taking a project through its entire life cycle
