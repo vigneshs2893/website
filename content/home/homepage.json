@@ -97,7 +97,7 @@
   },
   "footer": {
     "email": "hello@pentafox.in",
-    "mobile": "+91 90432 69523",
+    "mobile": "+91 90035 58222",
     "locations": [
       {
         "title": "Bengaluru",
@@ -108,11 +108,15 @@
         "address": "No.49 Journalist Colony, Thiruvanmiyur Chennai 600041"
       },
       {
+        "title": "Coimbatore",
+        "address": "No.36/1, Raghav Towers, Amman Nagar, Sathy Rd, near Amman Kovil Bus Stop, Saravanampatti, Coimbatore 641035"
+      },
+      {
         "title": "Erode",
         "address": "920, 2nd Floor, Park Rd, Thirunagar Colony, Erode, Tamil Nadu 638001"
       },
       {
-        "title": "US",
+        "title": "US (Colorado)",
         "address": "201, Maplehurst Pt, Highlands Ranch, CO 80126"
       }
     ],

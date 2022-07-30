@@ -39,7 +39,8 @@ const Footer = ({ hideLink }) => {
   return (
     <FooterWrapper>
       <div className="container lg-container">
-        <div className={`row ${!isMobileDevice ? 'vertical-bottom' : ''}`}>
+        {/* <div className={`row ${!isMobileDevice ? 'vertical-bottom' : ''}`}> */}
+        <div className='row'>
           <div className="col-12 col-sm-6 col-md-6">
             <p className="heading-txt mb-24">
               <span className="bold">Don’t be a stranger</span>
