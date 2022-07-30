@@ -8,6 +8,12 @@
     },
     "jobs": [
       {
+        "title": "HR/Recruitment Specialist",
+        "shortDescription": "Highly aspirational HR/Ops person to help us on Recruitment, team management and building the work culture",
+        "tags": ["HR", "Recruitment", "Full Time / Remote", "2+ years"],
+        "description": "position-6.md"
+      },
+      {
         "title": "Front end developer",
         "shortDescription": "Experience in ReactJS and interested in building performant web apps. Responsible for architecting and building web apps.",
         "tags": ["ReactJS", "Full Time / Remote", "1-2 years"],
