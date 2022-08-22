@@ -24,6 +24,24 @@
         "shortDescription": "Design, build and maintain efficient, reusable, and reliable REST APIs. A strong team player with a commitment to perfection.",
         "tags": ["Flask/Django", "Full Time / Remote", "2+ years"],
         "description": "position-3.md"
+      },
+      {
+        "title": "Software Engineer - QA",
+        "shortDescription": "Creative problem solvers who can work on the quality initiatives that will help build the Pentafox products team.",
+        "tags": ["Java8+/TestNG/Selenium", "Full Time / Remote", "1+ years"],
+        "description": "position-4.md"
+      },
+      {
+        "title": "Platform Engineer",
+        "shortDescription": "One who would drive and deliver our platform needs from cross functional teams by adopting Infrastructure as Code (IaC) practices and mindset.",
+        "tags": ["AWS Services (EC2, S3, VPC, RDS, ELB)", "Full Time / Remote", "1-3 years"],
+        "description": "position-5.md"
+      },
+      {
+        "title": "Snowflake Developer",
+        "shortDescription": "Talented Snowflake Data Engineer who are well versed with Snowflake.",
+        "tags": ["Python", "Snowflake", "Full Time / Remote", "2+ years"],
+        "description": "position-7.md"
       }
     ],
     "benefits": {

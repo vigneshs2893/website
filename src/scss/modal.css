@@ -1,0 +1,18 @@
+
+.ReactModal__Content {
+  inset: 80px 140px 40px 140px !important;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .ReactModal__Content {
+    inset: 80px 80px 40px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .ReactModal__Content {
+    inset: 0 !important;
+  }
+}

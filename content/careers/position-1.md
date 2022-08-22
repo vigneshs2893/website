@@ -4,25 +4,26 @@ profile: We are looking for a React developer interested in building performant 
 location: ['Erode', 'Coimbatore']
 jobType: ['Full Time', 'Remote']
 ctc: Based on Candidates Exp.
-education: Any Professional Degree
-skills: ['HTML', 'CSS', 'Javascript', 'ReactJS']
+education: B.Tech/M.Tech/B.E./BSc (CS)/MSc (CS)/BCA/MCA
+experience: 1-2 years
+skills: ['HTML', 'CSS', 'Javascript/Typescript', 'ReactJS']
 ---
 ### Experience Required
   - Experience taking a project through its entire life cycle
   - 1-2 years' experience developing front end applications using ReactJS
   - Experience in converting UI design files into HTML/CSS Markup
   
-### Skils Required
+### Skills Required
   - Hands on experience with Javascript and UI design/development using HTML/CSS
   - Working in an agile environment and have a work experience with Agile/Scrum
   - Hands on experience on any version control system like Git, GitHub/Gitlab/Bitbucket
-  - Knowledge of vanila JS and DOM APIs
+  - Knowledge of vanilla JS and DOM APIs
   - Ability to work in a fast paced, growth mode start-up environment
   - Willingness to roll up one's sleeves and do whatever has to be done, a hands-on approach to leading by example, and demonstrating a sense of ownership
 
 ### Responsibilities
 You are expected to 
-  - collect requirements from lead/owner
-  - create a workplan and work on the delivery of items
-  - communicate properly and colloborate with team
+  - collect requirements from the lead/owner
+  - create a work plan and work on the delivery of items
+  - communicate properly and collaborate with the team
   - come up with new ideas to improve the development flow and increase productivity

@@ -24,7 +24,7 @@ const IndexPage = () => {
             maxHeight: 300,
             quality: 90,
             traceSVG: {
-              color: "#292733"
+              color: "#92A9BD"
               turnPolicy: TURNPOLICY_MAJORITY
             }
           ) {
@@ -38,7 +38,7 @@ const IndexPage = () => {
             maxHeight: 300,
             quality: 90,
             traceSVG: {
-              color: "#292733"
+              color: "#92A9BD"
               turnPolicy: TURNPOLICY_MAJORITY
             }
           ) {

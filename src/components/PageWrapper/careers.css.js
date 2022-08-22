@@ -126,6 +126,7 @@ export const BenefitsContent = styled.section`
 `;
 
 export const CareersContent = styled.div`
+  padding: 0 20px;
   padding-top: 40px;
 
   .heading {
@@ -244,7 +245,7 @@ export const CareersContent = styled.div`
     }
 
     .job-listing {
-      max-width: 75%;
+      max-width: min(60%, 800px);
       margin: 0 auto;
       grid-gap: 20px;
       grid-template-columns: 1fr;

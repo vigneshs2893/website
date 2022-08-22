@@ -2,6 +2,7 @@ import React, { useState } from "react"
 // import Modal from "../Modal/Modal";
 import ReactModal from 'react-modal';
 import { ModalBody, ModalHeader } from "../Modal/Modal.css";
+import '../../scss/modal.css';
 
 ReactModal.defaultStyles.overlay.backgroundColor = 'rgba(0,0,0,.3)';
 ReactModal.defaultStyles.overlay.zIndex = 50;
@@ -16,14 +17,16 @@ const JobMeta = ({ data={} }) => {
       <h3>Job Profile</h3>
       <p>{data.profile}</p>
       <div className="meta-grid">
-        <div>Job Type</div>
+        <div className="bold">Job Type</div>
         <div>: {data.jobType.join(', ')}</div>
-        <div>Location</div>
+        <div className="bold">Location</div>
         <div>: {data.location.join(', ')}</div>
-        <div>Skills</div>
-        <div>: {data.skills.join(', ')}</div>
-        <div>Education</div>
+        <div className="bold">Education</div>
         <div>: {data.education}</div>
+        <div className="bold">Skills</div>
+        <div>: {data.skills.join(', ')}</div>
+        <div className="bold">Experience</div>
+        <div>: {data.experience}</div>
       </div>
     </div>
   )
@@ -49,7 +52,10 @@ const JobsList = ({ data }) => {
           )
         })}
       </div>
-      <ReactModal isOpen={selectedJob.title} onRequestClose={() => setSelectedJob({})}>
+      <ReactModal
+        isOpen={selectedJob.title}
+        onRequestClose={() => setSelectedJob({})}
+        >
         <ModalHeader>
           <h1>{selectedJob.title}</h1>
           <span onClick={() => setSelectedJob({})} />

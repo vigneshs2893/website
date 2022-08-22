@@ -24,56 +24,80 @@
     "description": "We take responsibility to increase your business tremendously with technological advantage and support you to stand out uniquely and consistently in the market.",
     "list": [
       {
-        "title": "Desikadaya",
-        "image": "../../src/images/logos/desikadaya.png"
-      },
-      {
         "title": "Petromoney",
+        "size": "lg",
         "image": "../../src/images/logos/petromoney.png"
       },
       {
+        "title": "Desikadaya",
+        "size": "md",
+        "image": "../../src/images/logos/desikadaya.png"
+      },
+      {
         "title": "StartupTN",
+        "size": "md",
         "image": "../../src/images/logos/startuptn.png"
       },
       {
         "title": "Suraaj Consultants",
+        "size": "md",
         "image": "../../src/images/logos/suraaj.png"
       },
       {
         "title": "GeoPITS",
+        "size": "md",
         "image": "../../src/images/logos/geopits.png"
       },
       {
+        "title": "Lumendata",
+        "size": "md",
+        "image": "../../src/images/logos/lumendata.png"
+      },
+      {
         "title": "10XTD",
+        "size": "md",
         "image": "../../src/images/logos/10xtd.png"
       },
       {
         "title": "Hope Tutors",
+        "size": "md",
         "image": "../../src/images/logos/hopetutors.png"
-      },
-      {
-        "title": "Lumendata",
-        "image": "../../src/images/logos/lumendata.png"
       }
     ]
   },
   "partners": {
-    "title": "Our Partners",
+    "title": "Partners",
     "description": "We have partnered with leading technology platforms and service providers to design and deliver the fastest and state-of-the-art comprehensive solutions to our customers.",
     "list": [
+      {
+        "title": "Microsoft for Startups",
+        "image": "../../src/images/logos/ms-startups.png"
+      },
+      {
+        "title": "ZOHO for Startups",
+        "image": "../../src/images/logos/zfs.png"
+      },
       {
         "title": "ACL - a since company",
         "image": "../../src/images/logos/acl.png"
       },
       {
+        "title": "Twilio",
+        "image": "../../src/images/logos/twilio.png"
+      },
+      {
         "title": "Prodjar",
         "image": "../../src/images/logos/prodjar.png"
+      },
+      {
+        "title": "Razorpay",
+        "image": "../../src/images/logos/razorpay.png"
       }
     ]
   },
   "footer": {
     "email": "hello@pentafox.in",
-    "mobile": "+91 90432 69523",
+    "mobile": "+91 90035 58222",
     "locations": [
       {
         "title": "Bengaluru",
@@ -84,11 +108,15 @@
         "address": "No.49 Journalist Colony, Thiruvanmiyur Chennai 600041"
       },
       {
+        "title": "Coimbatore",
+        "address": "No.36/1, Raghav Towers, Amman Nagar, Sathy Rd, near Amman Kovil Bus Stop, Saravanampatti, Coimbatore 641035"
+      },
+      {
         "title": "Erode",
         "address": "920, 2nd Floor, Park Rd, Thirunagar Colony, Erode, Tamil Nadu 638001"
       },
       {
-        "title": "US",
+        "title": "US (Colorado)",
         "address": "201, Maplehurst Pt, Highlands Ranch, CO 80126"
       }
     ],

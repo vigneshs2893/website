@@ -13,6 +13,7 @@ export const TopSectionWrapper = styled.section`
 
   min-height: 340px;
   height: 60vh;
+  max-height: 540px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,8 +32,7 @@ export const TopSectionWrapper = styled.section`
   ${xs} {
     padding-top: 120px;
     padding-bottom: 60px;
-    min-height: 50vh;
-    height: 340px;
+    height: min(40vh, 400px);
 
     h1 {
       font-size: 2rem;
