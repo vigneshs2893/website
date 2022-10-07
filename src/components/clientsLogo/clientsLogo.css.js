@@ -37,15 +37,10 @@ export const ClientLogoSection = styled.div`
       transition: all .35s ease-in-out;
 
       img {
-        filter: grayscale(90%);
         height: 38px;
         ${sm} {
           height: 45px;
         }
-      }
-
-      &:hover img {
-        filter: none;
       }
     }
   }

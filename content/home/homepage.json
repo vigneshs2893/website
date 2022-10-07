@@ -24,6 +24,11 @@
     "description": "We take responsibility to increase your business tremendously with technological advantage and support you to stand out uniquely and consistently in the market.",
     "list": [
       {
+        "title": "MyRepublic",
+        "size": "md",
+        "image": "../../src/images/logos/myRepublic.png"
+      },
+      {
         "title": "Petromoney",
         "size": "lg",
         "image": "../../src/images/logos/petromoney.png"
