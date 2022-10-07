@@ -67,6 +67,11 @@
         "title": "Hope Tutors",
         "size": "md",
         "image": "../../src/images/logos/hopetutors.png"
+      },
+      {
+        "title": "Ameex",
+        "size": "md",
+        "image": "../../src/images/logos/ameex.png"
       }
     ]
   },
