@@ -69,6 +69,11 @@
         "image": "../../src/images/logos/hopetutors.png"
       },
       {
+        "title": "Techxlns",
+        "size": "lg",
+        "image": "../../src/images/logos/techxlns.png"
+      },
+      {
         "title": "Ameex",
         "size": "md",
         "image": "../../src/images/logos/ameex.png"
@@ -119,7 +124,7 @@
       },
       {
         "title": "Coimbatore",
-        "address": "No.36/1, Raghav Towers, Amman Nagar, Sathy Rd, near Amman Kovil Bus Stop, Saravanampatti, Coimbatore 641035"
+        "address": "Pentafox Technologies Private Limited, Shri Maharishi Tech Park, 2nd Floor, Namashivaya Nagar, Saravanampatti, Coimbatore, Tamil Nadu 641035"
       },
       {
         "title": "Erode",
