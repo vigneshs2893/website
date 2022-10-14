@@ -8,30 +8,6 @@
     },
     "jobs": [
       {
-        "title": "Front end developer",
-        "shortDescription": "Experience in ReactJS and interested in building performant web apps. Responsible for architecting and building web apps.",
-        "tags": ["ReactJS", "Full Time / Remote", "1-2 years"],
-        "description": "position-1.md"
-      },
-      {
-        "title": "Mobile app developer",
-        "shortDescription": "Experience in React Native and interested in building performant mobile apps on both the iOS and Android platforms.",
-        "tags": ["React Native", "Full Time / Remote", "1-2 years"],
-        "description": "position-2.md"
-      },
-      {
-        "title": "Python developer",
-        "shortDescription": "Design, build and maintain efficient, reusable, and reliable REST APIs. A strong team player with a commitment to perfection.",
-        "tags": ["Flask/Django", "Full Time / Remote", "2+ years"],
-        "description": "position-3.md"
-      },
-      {
-        "title": "Platform Engineer",
-        "shortDescription": "One who would drive and deliver our platform needs from cross functional teams by adopting Infrastructure as Code (IaC) practices and mindset.",
-        "tags": ["AWS Services (EC2, S3, VPC, RDS, ELB)", "Full Time / Remote", "1-3 years"],
-        "description": "position-5.md"
-      },
-      {
         "title": "Snowflake Developer",
         "shortDescription": "Talented Snowflake Data Engineer who are well versed with Snowflake.",
         "tags": ["Python", "Snowflake", "Full Time / Remote", "2+ years"],
