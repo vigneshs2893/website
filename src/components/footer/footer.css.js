@@ -93,6 +93,26 @@ export const FooterWrapper = styled.footer`
     }
   }
 
+  .form-group-checkbox {
+    &:last-child {
+      margin-bottom: 24px;
+    }
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    label {
+      color: ${theme.white};
+      font-size: 12px;
+      margin-left: 10px;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none;
+    }
+    input {
+      margin-top: 2px;
+    }
+  }
+
   .form-group {
     &:last-child {
       margin-bottom: 24px;
@@ -120,6 +140,26 @@ export const FooterWrapper = styled.footer`
       ${sm}{
         height: 48px;
         font-size: 14px;
+      }
+
+      &::placeholder {
+        color: #19181D;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      background: ${theme.white};
+      border: 1px solid #ECEAEA;
+      border-radius: 2px;
+      padding: 16px;
+      font-size: 12px;
+      line-height: 140%;
+      font-weight: 600;
+      color: #19181D;
+
+      ${sm}{
+        font-size: 16px;
       }
 
       &::placeholder {
@@ -206,6 +246,10 @@ export const FooterWrapper = styled.footer`
 
     ${sm}{
       font-size: 16px;
+    }
+
+    &:disabled {
+      background: rgb(146, 146, 146);
     }
   }
 
