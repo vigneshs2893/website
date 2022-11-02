@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Sriram <sriram@pentafox.in>",
   "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^1.4.4",
     "@reach/router": "^1.2.1",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.18.12",
