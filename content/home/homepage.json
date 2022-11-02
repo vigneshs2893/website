@@ -116,11 +116,11 @@
     "locations": [
       {
         "title": "Bengaluru",
-        "address": "5th floor, 91Springboard, Trifecta Adatto, ITPL Main Rd, Garudacharpalya, Mahadevapura, Bengaluru, Karnataka 560048"
+        "address": "5th floor, 91Springboard, Trifecta Adatto, ITPL Main Rd, Garudacharpalya, Mahadevapura,\nBengaluru, Karnataka 560048"
       },
       {
         "title": "Chennai",
-        "address": "No.49 Journalist Colony, Thiruvanmiyur Chennai 600041"
+        "address": "No.49, Journalist Colony,\nThiruvanmiyur,\n Chennai, Tamil Nadu 600041"
       },
       {
         "title": "Coimbatore",
@@ -128,11 +128,11 @@
       },
       {
         "title": "Erode",
-        "address": "920, 2nd Floor, Park Rd, Thirunagar Colony, Erode, Tamil Nadu 638001"
+        "address": "920, 2nd Floor, Park Rd,\nThirunagar Colony,\nErode, Tamil Nadu 638001"
       },
       {
         "title": "US (Colorado)",
-        "address": "201, Maplehurst Pt, Highlands Ranch, CO 80126"
+        "address": "201, Maplehurst Pt, Highlands Ranch,\nCO 80126"
       }
     ],
     "address": {

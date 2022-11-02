@@ -1,4 +1,4 @@
 export const URL = {
-    base: "https://kbh70e037j.execute-api.ap-south-1.amazonaws.com/",
+    base: process.env.GATSBY_API_URL,
     contact: "contact/contactus"
 }
