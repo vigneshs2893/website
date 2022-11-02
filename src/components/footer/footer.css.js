@@ -25,7 +25,7 @@ export const FooterWrapper = styled.footer`
     }
     .location-address {
       margin-bottom: 0;
-      color: #959595;
+      color: #b8b6b6;
       font-size: 13px;
     }
   }
@@ -111,6 +111,10 @@ export const FooterWrapper = styled.footer`
     input {
       margin-top: 2px;
     }
+
+    .error-label {
+      color: rgb(202, 61, 53);
+    }
   }
 
   .form-group {
@@ -122,6 +126,12 @@ export const FooterWrapper = styled.footer`
       input {
         border-color: #f44336;
         box-shadow: 0 2px 10px 0 rgba(244, 67, 54, 0.5);
+      }
+    }
+
+    .error-label {
+      &::placeholder {
+        color: rgb(202, 61, 53);
       }
     }
 
@@ -143,7 +153,7 @@ export const FooterWrapper = styled.footer`
       }
 
       &::placeholder {
-        color: #19181D;
+        color: rgb(146, 146, 146);
       }
     }
 
@@ -163,7 +173,7 @@ export const FooterWrapper = styled.footer`
       }
 
       &::placeholder {
-        color: #19181D;
+        color: rgb(146, 146, 146);
       }
     }
 

@@ -16,17 +16,19 @@ const Footer = ({ hideLink }) => {
   const [comms, setComms] = useState(false);
   const [privacy, setPrivacy] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState();
   const [res, setRes] = useState(false);
   const [captchaToken, setCaptchaToken] = useState();
   const captchaRef = useRef();
 
   const handleSubmit = () => {
-    if (privacy) {
+    if (privacy && name && email && mobile) {
+      setError()
       const requestOptions = {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'x-api-key' : '93XprwQdbN38ZOACYIjrb6cHv1uoZZIt3NGQ6y5f',
+          'x-api-key' : process.env.GATSBY_API_KEY,
         },
         body: JSON.stringify({
           name,
@@ -34,10 +36,10 @@ const Footer = ({ hideLink }) => {
           phone: mobile,
           desc: message,
           is_privacy: privacy,
-          is_comms: comms
+          is_comms: comms,
+          captcha_token: captchaToken
         })
       }
-      // console.log(requestOptions)
       setLoading(true)
       fetch(`${URL.base}${URL.contact}`, requestOptions)
         .then(response => response.json())
@@ -59,7 +61,21 @@ const Footer = ({ hideLink }) => {
         setComms(false)
         setPrivacy(false)
         setRes(false)
+        captchaRef.current.resetCaptcha()
       }, 6000)
+    } else {
+      if (!privacy) {
+        setError({...error, is_privacy: 'Required'})
+      }
+      if (!mobile) {
+        setError({...error, mobile: 'Required'})
+      }
+      if (!email) {
+        setError({...error, email: 'Required'})
+      }
+      if (!name) {
+        setError({...error, name: 'Required'})
+      }
     }
   }
 
@@ -120,7 +136,7 @@ const Footer = ({ hideLink }) => {
                   data.homeJson.footer.locations.map((item, i) => (
                     <div key={i}>
                       <p className='location-title'>{item.title}</p>
-                      <p className='location-address'>{item.address}</p>
+                      <p className='location-address'>{item.address.split('\n').map(str => { return <p className='location-address'>{str}</p>})}</p>
                     </div>
                   ))
                 }
@@ -134,29 +150,6 @@ const Footer = ({ hideLink }) => {
               } */}
             </p>
 
-            {/* <div className="row">
-              <div className="col-6">
-                <p className="mb-2">
-                  <span>Feel like talking</span>
-                  <a href={`tel:${data.homeJson.footer.mobile.replace(/[\s\(\)-]/g, '')}`}>{data.homeJson.footer.mobile}</a>
-                </p>
-              </div>
-              <div className="col-6">
-                <p className="mb-2">
-                  <span>Need help?</span>
-                  <a href={`mailto:${data.homeJson.footer.email}`}>{data.homeJson.footer.email}</a>
-                </p>
-              </div>
-            </div> */}
-
-            {/* {isMobileDevice ? null : (
-              <ul className="list-unstyled social-icons mb-3">
-                <li><a href={data.homeJson.footer.facebook} target="_blank"><i className="pentafox-facebook" /></a></li>
-                <li><a href={data.homeJson.footer.linkedin} target="_blank"><i className="pentafox-linkedin" /></a></li>
-              </ul>
-            )} */}
-          </div>
-          <div className="col-12 col-sm-6 col-md-6">
             <div className="row">
               <div className="col-6">
                 <p className="mb-2">
@@ -178,6 +171,29 @@ const Footer = ({ hideLink }) => {
                 <li><a href={data.homeJson.footer.linkedin} target="_blank"><i className="pentafox-linkedin" /></a></li>
               </ul>
             )}
+          </div>
+          <div className="col-12 col-sm-6 col-md-6">
+            {/* <div className="row">
+              <div className="col-6">
+                <p className="mb-2">
+                  <span>Feel like talking</span>
+                  <a href={`tel:${data.homeJson.footer.mobile.replace(/[\s\(\)-]/g, '')}`}>{data.homeJson.footer.mobile}</a>
+                </p>
+              </div>
+              <div className="col-6">
+                <p className="mb-2">
+                  <span>Need help?</span>
+                  <a href={`mailto:${data.homeJson.footer.email}`}>{data.homeJson.footer.email}</a>
+                </p>
+              </div>
+            </div> */}
+
+            {/* {isMobileDevice ? null : (
+              <ul className="list-unstyled social-icons mb-3">
+                <li><a href={data.homeJson.footer.facebook} target="_blank"><i className="pentafox-facebook" /></a></li>
+                <li><a href={data.homeJson.footer.linkedin} target="_blank"><i className="pentafox-linkedin" /></a></li>
+              </ul>
+            )} */}
             {/* <p className="mb-40">
               <span className='section-title'>Our Locations</span>
               <div className='location-grid'>
@@ -201,20 +217,20 @@ const Footer = ({ hideLink }) => {
             ): null}
             <form id='contact-form'>
               <div className="form-group">
-                <input name="" type="text" value={name} placeholder="Name" onChange={(e) => setName(e.target.value)} />
+                <input name="" type="text" className={error?.name && "error-label"} value={name} placeholder="Name" onChange={(e) => setName(e.target.value)} required/>
               </div>
               <div className="form-group">
-                <input name="" type="text" value={email} placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} />
+                <input name="" type="email" className={error?.email && "error-label"} value={email} placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} required/>
               </div>
               <div className="form-group">
-                <input name="" type="text" value={mobile} placeholder="Mobile" onChange={(e) => setMobile(e.target.value)} />
+                <input name="" type="text" className={error?.mobile && "error-label"} value={mobile} placeholder="Mobile" onChange={(e) => setMobile(e.target.value)} required/>
               </div>
               <div className="form-group">
-                <textarea name="" type="text" value={message} placeholder="Whats on your mind..." onChange={(e) => setMessage(e.target.value)} />
+                <textarea name="" type="text" value={message} placeholder="Whats on your mind..." onChange={(e) => setMessage(e.target.value)} required/>
               </div>
               <div className="form-group-checkbox">
-                <input name="" type="checkbox" checked={privacy} id="is_privacy" onChange={(e) => setPrivacy(e.target.checked)} />
-                <label for="is_privacy">I confirm, I have read and agree to Pentafox's Privacy Policy and consent to share my information</label>
+                <input name="" type="checkbox" checked={privacy} id="is_privacy" onChange={(e) => {setPrivacy(e.target.checked); setError();}} />
+                <label for="is_privacy" className={error?.is_privacy && "error-label"}>I confirm, I have read and agree to Pentafox's Privacy Policy and consent to share my information</label>
               </div>
               <div className="form-group-checkbox">
                 <input name="" type="checkbox" checked={comms} id="is_comms" onChange={(e) => setComms(e.target.checked)} />
@@ -228,7 +244,7 @@ const Footer = ({ hideLink }) => {
               <div className='form-group'>
                 <HCaptcha
                   ref={captchaRef}
-                  sitekey="218a4fc4-ca5b-4bf0-85d9-e065e87b9374"
+                  sitekey={process.env.GATSBY_CAPTCHA_TOKEN}
                   onVerify={(token) => setCaptchaToken(token)}
                   onExpire={() => setCaptchaToken()}
                 />
