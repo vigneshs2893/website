@@ -112,21 +112,21 @@ We also disclose information about your use of our site to our social media/adve
 You can manage the non-essential or functional cookies in your browser. These settings are usually found within the ‘privacy’ section of browsers.
 
 **Chrome**<br/>
-https//support.google.com/chrome/answer/95647?co=GENIE.Platform=Desktop&hl=en<br/>
+https://support.google.com/chrome/answer/95647?co=GENIE.Platform=Desktop&hl=en<br/>
 **Firefox**<br/>
-https//support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences<br/>
+https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences<br/>
 **IE**<br/>
-https//support.microsoft.com/en-in/help/17442/windows-internet-explorer-delete-manage-cookies<br/>
+https://support.microsoft.com/en-in/help/17442/windows-internet-explorer-delete-manage-cookies<br/>
 
 You can choose to accept or decline cookies, either by selecting accept or decline in the banner on your first visit (in the latter case we will try to set a cookie to record your preference for future visits), or by changing the settings in your web browser. Most web browsers are set to accept cookies by default, but you can usually modify your browser settings to decline cookies if you prefer. These settings are usually found within the ‘privacy’ section. For mobile devices these may be within the browser app settings.
-If you choose not to accept our various cookies, this will prevent you from taking full advantage of the website. If you wish to delete cookies which have already been placed on your computer’s hard drive, you can do so through your browser, and further information on how to do this can be found here  https//www.aboutcookies.org/page/2/
+If you choose not to accept our various cookies, this will prevent you from taking full advantage of the website. If you wish to delete cookies which have already been placed on your computer’s hard drive, you can do so through your browser, and further information on how to do this can be found here  https://www.aboutcookies.org/page/2/
 
 We also use web beacons or tracking pixels in our emails and web pages which help us to monitor whether you have opened any newsletters we may have sent to you. A web beacon is one of various techniques used on web pages or email, to unobtrusively (usually invisibly) allow checking that a user has accessed some content. Common uses are email tracking and page tagging for web analytics. We use this information to deliver you a personalized service by ensuring that we send you information that we believe you will find interesting based on the content we know you have engaged with previously.
 
 Please refer to the links provided below to know more about the third-party analytics cookies used on Pentafox websites –
 
 **Google Analytics Cookies**<br/>
-https//developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage
+https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage
 
 To provide website visitors with more choice in how their data is collected by Google Analytics, Google have developed the Google Analytics Opt-out Browser Add-on. The add-on communicates with the Google Analytics JavaScript (ga.js) to indicate that information about the website visit should not be sent to Google Analytics. The Google Analytics Opt-out Browser Add-on does not prevent information from being sent to the website itself or to other web analytics services.
 
