@@ -27,7 +27,7 @@ const privacy = () => {
       showCareers={false}
       showDarkLogo={false}
       headProps={{
-        pageTitle: 'Careers',
+        pageTitle: 'Privacy Statement',
       }}
     >
       <HomeWrapper>
