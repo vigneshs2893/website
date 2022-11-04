@@ -38,7 +38,7 @@ const privacy = () => {
             </div>
           </TopSectionWrapper>
           <div className='container md-container' style={{marginTop: 80, marginBottom: 80, overflowWrap: 'break-word'}}>
-            <p dangerouslySetInnerHTML={{ __html: data.privacyJson.description.childrenMarkdownRemark[0].html}} />
+            <div dangerouslySetInnerHTML={{ __html: data.privacyJson.description.childrenMarkdownRemark[0].html}} />
           </div>
         </PageWrapper>
       </HomeWrapper>
