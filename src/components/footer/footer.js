@@ -1,5 +1,5 @@
 import React, { Fragment, useRef, useState } from 'react';
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql, Link, navigate } from "gatsby"
 import IsMobile from '../../helpers/IsMobile';
 import { FooterWrapper } from './footer.css';
 import BackgroundImage from 'gatsby-background-image';
@@ -62,6 +62,7 @@ const Footer = ({ hideLink }) => {
         setPrivacy(false)
         setRes(false)
         captchaRef.current.resetCaptcha()
+        setCaptchaToken()
       }, 6000)
     } else {
       if (!privacy) {
@@ -107,6 +108,11 @@ const Footer = ({ hideLink }) => {
   }
 }
 `)
+
+const handlePrivacyStatement = (event) => {
+  event.preventDefault()
+  navigate('/privacy')
+}
 
   return (
     <FooterWrapper>
@@ -230,7 +236,7 @@ const Footer = ({ hideLink }) => {
               </div>
               <div className="form-group-checkbox">
                 <input name="" type="checkbox" checked={privacy} id="is_privacy" onChange={(e) => {setPrivacy(e.target.checked); setError();}} />
-                <label for="is_privacy" className={error?.is_privacy && "error-label"}>I confirm, I have read and agree to Pentafox's Privacy Policy and consent to share my information</label>
+                <label for="is_privacy" className={error?.is_privacy && "error-label"}>I confirm, I have read and agree to <span onClick={handlePrivacyStatement}><a>Pentafox's Privacy Policy</a></span> and consent to share my information</label>
               </div>
               <div className="form-group-checkbox">
                 <input name="" type="checkbox" checked={comms} id="is_comms" onChange={(e) => setComms(e.target.checked)} />

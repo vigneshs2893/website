@@ -115,6 +115,12 @@ export const FooterWrapper = styled.footer`
     .error-label {
       color: rgb(202, 61, 53);
     }
+
+    a {
+      color: ${theme.white};
+      text-decoration: none;
+      border-bottom: 0.2px solid ${theme.white};
+    }
   }
 
   .form-group {
