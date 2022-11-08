@@ -32,10 +32,8 @@ By using Pentafox’s websites, associated microsites and mobile applications, y
 
 Pentafox websites may contain links to other sites which are outside our control and are not covered by this Privacy Statement. We encourage you to review the Privacy Statement/Notice of each website you visit.
 
-**Personal information that is collected from third party sources Engage with Pentafox through social media**<br />
+**Personal information collected from third party sources, feature engagements with Pentafox and social media**<br />
 You can engage with us through social media websites or through features on Pentafox websites that integrate with social media sites. When you engage with us through social media sites, you may allow us to have access to certain information from your social media profile based upon your privacy preference settings on such platform.
-
-Personal information that is collected when you access our Websites through mobile devices
 
 **Access our Websites through Mobile Devices**<br />
 If you access our websites on your mobile device, we may collect your information such as your First Name, Last Name, E-mail Address, Job Title, Organization Name, Country, City, Phone Number, IP address and Device details.
@@ -112,21 +110,21 @@ We also disclose information about your use of our site to our social media/adve
 You can manage the non-essential or functional cookies in your browser. These settings are usually found within the ‘privacy’ section of browsers.
 
 **Chrome**<br/>
-https://support.google.com/chrome/answer/95647?co=GENIE.Platform=Desktop&hl=en<br/>
+<a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform=Desktop&hl=en" target="_blank">https://support.google.com/chrome/answer/95647?co=GENIE.Platform=Desktop&hl=en<a/><br/>
 **Firefox**<br/>
-https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences<br/>
+<a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank">https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences<a/><br/>
 **IE**<br/>
-https://support.microsoft.com/en-in/help/17442/windows-internet-explorer-delete-manage-cookies<br/>
+<a href="https://support.microsoft.com/en-in/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank">https://support.microsoft.com/en-in/help/17442/windows-internet-explorer-delete-manage-cookies<a/><br/>
 
 You can choose to accept or decline cookies, either by selecting accept or decline in the banner on your first visit (in the latter case we will try to set a cookie to record your preference for future visits), or by changing the settings in your web browser. Most web browsers are set to accept cookies by default, but you can usually modify your browser settings to decline cookies if you prefer. These settings are usually found within the ‘privacy’ section. For mobile devices these may be within the browser app settings.
-If you choose not to accept our various cookies, this will prevent you from taking full advantage of the website. If you wish to delete cookies which have already been placed on your computer’s hard drive, you can do so through your browser, and further information on how to do this can be found here  https://www.aboutcookies.org/page/2/
+If you choose not to accept our various cookies, this will prevent you from taking full advantage of the website. If you wish to delete cookies which have already been placed on your computer’s hard drive, you can do so through your browser, and further information on how to do this can be found here  <a href="https://www.aboutcookies.org/cookie-faq" target="_blank">https://www.aboutcookies.org/cookie-faq</a>
 
 We also use web beacons or tracking pixels in our emails and web pages which help us to monitor whether you have opened any newsletters we may have sent to you. A web beacon is one of various techniques used on web pages or email, to unobtrusively (usually invisibly) allow checking that a user has accessed some content. Common uses are email tracking and page tagging for web analytics. We use this information to deliver you a personalized service by ensuring that we send you information that we believe you will find interesting based on the content we know you have engaged with previously.
 
 Please refer to the links provided below to know more about the third-party analytics cookies used on Pentafox websites –
 
 **Google Analytics Cookies**<br/>
-https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage
+<a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a>
 
 To provide website visitors with more choice in how their data is collected by Google Analytics, Google have developed the Google Analytics Opt-out Browser Add-on. The add-on communicates with the Google Analytics JavaScript (ga.js) to indicate that information about the website visit should not be sent to Google Analytics. The Google Analytics Opt-out Browser Add-on does not prevent information from being sent to the website itself or to other web analytics services.
 
@@ -216,18 +214,17 @@ Pentafox shall not be responsible for the authenticity of the personal informati
 
 **Grievance Redressal**<br/>
 Any grievance or complaint, about processing of personal information, should be sent to Pentafox in writing to following contact email ID. Grievance shall be redressed as expeditiously as possible. The contact information for the Grievance Officer for India is Shilpa R, Chief Operating Officer;
- e-mail address – privacy@pentafox.in
+ e-mail address – [privacy@pentafox.in](mailto:privacy@pentafox.in)
 
 **Effective Date**<br/>
-This Privacy Statement is effective from 03rd November 2021 and it supersedes all existing polices on the subject matter.
+This Privacy Statement is effective from 03rd November 2022 and it supersedes all existing polices on the subject matter.
 
 **Changes to this Privacy Statement**<br/>
 Please note that this Privacy Statement may be subject to change from time to time. The revised Privacy Statement will accordingly be published on this page.  We will not reduce your rights under this Privacy Statement without your explicit consent. Please regularly check this Privacy Statement to ensure you are aware of the latest updates with respect to the same.
 
-This Privacy Statement was last updated on 03rd November 2021
+This Privacy Statement was last updated on 03rd November 2022
 
-**Contact Us**<br/>
-If you have any questions or comments regarding this Privacy Statement or processing of your information, please fill out the form below or contact us by writing to
+If you have any questions or comments regarding this Privacy Statement or processing of your information, please write to us at privacy@pentafox.in
 
 **Pentafox Technologies Private Limited**<br/>
 Shri Maharishi Tech Park, <br/>
@@ -235,7 +232,7 @@ Shri Maharishi Tech Park, <br/>
 Saravanampatti, Coimbatore, <br/>
 Tamil Nadu 641035
 
-**Phone**: +91-9003558222<br/>
-**Email**: privacy@pentafox.in
+**Phone**: [+91-9003558222](tel:+91-9003558222)<br/>
+**Email**: [privacy@pentafox.in](mailto:privacy@pentafox.in)
 
-In case of any queries with respect to personal data processing, the Global Data Privacy team can be reached out at privacy@pentafox.in.
+If you have any questions or comments regarding this Privacy Statement or processing of your information, please fill out the form below or contact us by writing to [privacy@pentafox.in](mailto:privacy@pentafox.in).
