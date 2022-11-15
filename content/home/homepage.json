@@ -29,6 +29,11 @@
         "image": "../../src/images/logos/myRepublic.png"
       },
       {
+        "title": "MyRepublic Digital",
+        "size": "md",
+        "image": "../../src/images/logos/myRDigital.png"
+      },
+      {
         "title": "Petromoney",
         "size": "lg",
         "image": "../../src/images/logos/petromoney.png"

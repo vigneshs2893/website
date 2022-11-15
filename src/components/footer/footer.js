@@ -111,7 +111,7 @@ const Footer = ({ hideLink }) => {
 
 const handlePrivacyStatement = (event) => {
   event.preventDefault()
-  navigate('/privacy')
+  // navigate('/privacy')
 }
 
   return (
@@ -236,7 +236,7 @@ const handlePrivacyStatement = (event) => {
               </div>
               <div className="form-group-checkbox">
                 <input name="" type="checkbox" checked={privacy} id="is_privacy" onChange={(e) => {setPrivacy(e.target.checked); setError();}} />
-                <label for="is_privacy" className={error?.is_privacy && "error-label"}>I confirm, I have read and agree to <span onClick={handlePrivacyStatement}><a>Pentafox's Privacy Policy</a></span> and consent to share my information</label>
+                <label for="is_privacy" className={error?.is_privacy && "error-label"}>I confirm, I have read and agree to <span><a href='https://pentafox.in/privacy' target="_blank">Pentafox's Privacy Policy</a></span> and consent to share my information</label>
               </div>
               <div className="form-group-checkbox">
                 <input name="" type="checkbox" checked={comms} id="is_comms" onChange={(e) => setComms(e.target.checked)} />

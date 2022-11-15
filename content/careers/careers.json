@@ -18,6 +18,42 @@
         "shortDescription": "Our Sales team is looking for creative problem solvers who can work on the quality initiatives that will help build the Pentafox Sales team.",
         "tags": ["Cloud Technologies", "Good verbal & written communication", "Full Time / Remote", "2+ years"],
         "description": "position-8.md"
+      },
+      {
+        "title": "Front End Developer",
+        "shortDescription": "Experience in ReactJS and interested in building performant web apps. Responsible for architecting and building web apps.",
+        "tags": ["ReactJS", "Full Time / Remote", "1-2 years"],
+        "description": "position-1.md"
+      },
+      {
+        "title": "Mobile app developer",
+        "shortDescription": "Experience in React Native and interested in building performant mobile apps on both the iOS and Android platforms.",
+        "tags": ["React Native", "Full Time / Remote", "1-2 years"],
+        "description": "position-2.md"
+      },
+      {
+        "title": "Python developer",
+        "shortDescription": "Design, build and maintain efficient, reusable, and reliable REST APIs. A strong team player with a commitment to perfection.",
+        "tags": ["Flask/Django", "Full Time / Remote", "2+ years"],
+        "description": "position-3.md"
+      },
+      {
+        "title": "Platform Engineer",
+        "shortDescription": "One who would drive and deliver our platform needs from cross functional teams by adopting Infrastructure as Code (IaC) practices and mindset.",
+        "tags": ["AWS Services (EC2, S3, VPC, RDS, ELB)", "Full Time / Remote", "1-3 years"],
+        "description": "position-5.md"
+      },
+      {
+        "title": "HR/Recruitment Specialist",
+        "shortDescription": "Highly aspirational HR/Ops person to help us on Recruitment, team management and building the work culture",
+        "tags": ["HR", "Recruitment", "Full Time / Remote", "2+ years"],
+        "description": "position-6.md"
+      },
+      {
+        "title": "Software Engineer - QA",
+        "shortDescription": "Creative problem solvers who can work on the quality initiatives that will help build the Pentafox products team.",
+        "tags": ["Java8+/TestNG/Selenium", "Full Time / Remote", "1+ years"],
+        "description": "position-4.md"
       }
     ],
     "benefits": {

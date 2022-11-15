@@ -70,7 +70,7 @@ const IndexPage = () => {
 `)
 
   return (
-    <LayoutHome>
+    <LayoutHome showCareers={false}>
       {/* home page starts */}
       <HomeWrapper>
         <HeroSection />
