@@ -6,6 +6,7 @@ import BackgroundImage from 'gatsby-background-image';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import { URL } from '../../services/requestUrl';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
+import { PopupButton } from 'react-calendly';
 
 const Footer = ({ hideLink }) => {
   const isMobileDevice = IsMobile();
@@ -256,9 +257,18 @@ const handlePrivacyStatement = (event) => {
                 />
               </div>
             </form>
-            <button className="btn send-btn" disabled={loading || !captchaToken} onClick={handleSubmit}>{
+            <button className="btn send-btn" 
+            disabled={loading || !captchaToken} 
+            onClick={handleSubmit}>{
             loading ? 'Sending ...' : res ? 'Submitted' :
             'Send Request'}</button>
+            
+            <PopupButton
+              url="https://calendly.com/vignesh-sankaran"
+              className="btn appointment-btn"
+              rootElement={document.getElementById("___gatsby")}
+              text="Talk to our Experts"
+            />
           </div>
         </div>
 

@@ -232,7 +232,7 @@ Shri Maharishi Tech Park, <br/>
 Saravanampatti, Coimbatore, <br/>
 Tamil Nadu 641035
 
-**Phone**: [+91-9003558222](tel:+91-9003558222)<br/>
+**Phone**: [+91-9003791579](tel:+91-9003791579)<br/>
 **Email**: [privacy@pentafox.in](mailto:privacy@pentafox.in)
 
 If you have any questions or comments regarding this Privacy Statement or processing of your information, please fill out the form below or contact us by writing to [privacy@pentafox.in](mailto:privacy@pentafox.in).

@@ -7,6 +7,7 @@ import PageWrapper, { TopSectionWrapper } from "../components/PageWrapper/PageWr
 import { CareersContent } from "../components/PageWrapper/careers.css"
 import JobsList from "../components/JobsList/JobsList"
 import BenefitsSection from "../components/Benefits/BenefitsSection"
+import { InlineWidget } from "react-calendly"
 
 const CareerPage = () => {
   const data = useStaticQuery(graphql`query CareersQuery {
@@ -101,6 +102,13 @@ const CareerPage = () => {
               </div>
             </CareersContent>
           </div>
+
+          {/* <!-- Calendly inline widget begin --> */}
+          {/* <div class="calendly-inline-widget" data-url="https://calendly.com/shidiq" style="min-width:320px;height:630px;"></div> */}
+          {/* <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> */}
+          {/* <!-- Calendly inline widget end --> */}
+          {/* <InlineWidget url="https://calendly.com/shidiq" /> */}
+
         </PageWrapper>
       </HomeWrapper>
       {/* career page ends */}

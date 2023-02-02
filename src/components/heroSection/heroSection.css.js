@@ -153,6 +153,32 @@ export const HeroSectionWrapper = styled.div`
             }
           }
         }
+
+        .appointment-btn {
+          display: inline-block;
+          background: #FFF;
+          color: #000;
+          opacity: 0.8;
+          color: rgb(110, 12, 15);
+          margin-left: 20px;
+          padding: 5px 12px;
+          border: 1px solid #FFFFFF;
+          cursor: pointer;
+          ${md}{
+            font-size: 16px;
+            line-height: 140%;
+            padding: 10px 22px;
+            transition: box-shadow .4s;
+
+            &:hover {
+              box-shadow: 2px 2px 2px 0 rgba(255, 255, 255, 0.5);
+            }
+
+            &:focus {
+              outline: none
+            }
+          }
+        }
       }
     }
   }
