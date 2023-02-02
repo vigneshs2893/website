@@ -4,6 +4,7 @@ import { HeroSectionWrapper } from './heroSection.css';
 import BackgroundImage from 'gatsby-background-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { PopupButton } from 'react-calendly';
+import { document } from 'browser-monads';
 
 const FigureWrapper = ({ children, id, ...props }) => {
   return (

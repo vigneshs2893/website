@@ -7,6 +7,7 @@ import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import { URL } from '../../services/requestUrl';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
 import { PopupButton } from 'react-calendly';
+import { document } from 'browser-monads';
 
 const Footer = ({ hideLink }) => {
   const isMobileDevice = IsMobile();
