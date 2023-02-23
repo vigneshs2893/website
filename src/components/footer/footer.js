@@ -279,7 +279,10 @@ const handlePrivacyStatement = (event) => {
             <Link to="/careers" className='pl-3 text-white'>Careers</Link>
             {/* <a href="/" >Terms of use</a> */}
           </div>
-          <div className="right-col">© 2022 Pentafox Technologies. All Rights Reserved.</div>
+          <div className="right-col" style={{textAlign: 'right', color: 'rgba(255, 255, 255, 0.6)'}}>
+          © 2023 Pentafox Technologies Private Limited. All rights reserved. <br/>
+          The content available on the website is protected by copyright laws.
+          </div>
           {/* {
             !hideLink && (
               <div className="right-col">
